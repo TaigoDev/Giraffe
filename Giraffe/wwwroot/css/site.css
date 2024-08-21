@@ -1,22 +1,152 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+.header-section {
+    background-size: cover;
+    background-position: center;
+    height: 20vh; /* Adjust the height as needed */
+    background: none;
+    background-image: url('/img/backgroundMain.png');
+    height: 505px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+}
+
+/* Navigation links */
+.nav-link {
+    font-size: 1rem;
+    margin-right: 20px;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    background-color: #343a40;
+    border: none;
+}
+
+    .dropdown-menu .dropdown-item {
+        color: white;
+    }
+
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #495057;
+        }
+
+/* Button styles */
+.btn-outline-light {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+}
+
+/* Adjust the logo size and spacing */
+.header-left img {
+    max-height: 50px;
+    height: auto;
+}
+
+.ContactUs {
+    border: 1px solid #fff;
+    border-radius: 22px;
+    width: 145px;
+    height: 35px;
+    padding: 9px 19px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 53px;
+    color: #fff;
+    margin-top: 110px;
+}
+
+footer {
+    background: #1a1a1a;
+    height: 292px;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+    .footer-text a {
+        font-weight: 600;
+        font-size: 17px;
+    }
+
+.socialMedia img {
+    margin: 5px;
+}
+
+.separation {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 17px;
+    color: #7b7b7b;
+    border-bottom: 1px solid #8f8f8f;
+    width: 1190px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 34px;
+    text-align: center;
+    color: #2e2e2e;
+    width: 500px;
+}
+
+.greetings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 75px;
+    margin-bottom: 125px;
+}
+
+.greetings button {
+    border-radius: 55px;
+    width: 183px;
+    height: 44px;
+    background: #b4f115;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    display: inline;
+    outline: none;
+    border: 0;
+}
+
+.greetings p {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #565656;
+    margin: 70px;
 }
