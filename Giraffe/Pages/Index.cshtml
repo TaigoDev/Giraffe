@@ -3,49 +3,220 @@
 @{
     ViewData["Title"] = "Home page";
 }
- <header class="header-section ">
-        <div class="container-fluid container">
-            <div class="d-flex justify-content-between align-items-center pt-5">
-                <div class="header-left">
-                    <a class="navbar-brand" href="/Index">
-                        <img src="/img/logo.png" alt="Giraffe" width="150">
-                    </a>
-                </div>
-                <div class="header-right d-flex align-items-center">
-                    <nav class="nav">
-                        <a class="nav-link text-white" href="#">Главная</a>
-                        <a class="nav-link text-white" href="#">О нас</a>
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Услуги
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Шелкография</a></li>
-                                <li><a class="dropdown-item" href="#">ДТФ</a></li>
-                                <li><a class="dropdown-item" href="#">Плоттерная резка</a></li>
-                                <li><a class="dropdown-item" href="#">Puff-Print</a></li>
-                            </ul>
-                        </div>
-                        <a class="nav-link text-white" href="#">Контакты</a>
-                    </nav>
-                    <a class="text-white ContactUs" href="#">Связаться с нами</a>
-                </div>
+<header class="header-section ">
+    <div class="container-fluid container">
+        <div class="d-flex justify-content-between align-items-center pt-5">
+            <div class="header-left">
+                <a class="navbar-brand" href="/Index">
+                    <img src="/img/logo.png" alt="Giraffe" width="150">
+                </a>
+            </div>
+            <div class="header-right d-flex align-items-center">
+                <nav class="nav">
+                    <a class="nav-link text-white" href="#">Главная</a>
+                    <a class="nav-link text-white" href="#">О нас</a>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Услуги
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Шелкография</a></li>
+                            <li><a class="dropdown-item" href="#">ДТФ</a></li>
+                            <li><a class="dropdown-item" href="#">Плоттерная резка</a></li>
+                            <li><a class="dropdown-item" href="#">Puff-Print</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-link text-white" href="#">Контакты</a>
+                </nav>
+                <a class="text-white ContactUs" href="#">Связаться с нами</a>
             </div>
         </div>
-        <div class="text-center">
-            <h1 class="text-center heading">Студия шелкографии</h1>
+    </div>
+    <div class="text-center">
+        <h1 class="text-center heading">Студия шелкографии</h1>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="separation">
+            <p>О НАС</p>
+            <p>GIRAFFE</p>
         </div>
-    </header>
-
-<div class="separation">
-    <p>О НАС</p>
-    <p>GIRAFFE</p>
-</div>
-<div class="greetings">
-    <h2>Привет, мы рады видеть тебя на нашем сайте!</h2>
-    <p>Мы представляем собой современную и гибкую компанию, занимающейся шелкографией. Это не просто наш бизнес - это то, что мы искренне любим и ценим. Мы существуем на рынке с 2019 года, и за это время мы смогли усовершенствовать наши навыки, накопить большой опыт и собрать сильную команду профессионалов. За такой небольшой период времени мы уже произвели более 1,500,000 единиц изделий, и сделали каждого нашего клиента чуточку счастливей! Мы стремимся к инновациям и постоянному росту, поэтому мы всегда открыта для новых проектов и возможно, именно вас мы ждем в качестве нашего следующего партнера!</p>
-    <button class="" href="#">Подробнее</button>
-</div>
-
-
-
+        <div class="greetings">
+            <h2 style="width: 500px;">Привет, мы рады видеть тебя на нашем сайте!</h2>
+            <p>Мы представляем собой современную и гибкую компанию, занимающейся шелкографией. Это не просто наш бизнес
+                -
+                это
+                то, что мы искренне любим и ценим. Мы существуем на рынке с 2019 года, и за это время мы смогли
+                усовершенствовать наши навыки, накопить большой опыт и собрать сильную команду профессионалов. За такой
+                небольшой период времени мы уже произвели более 1,500,000 единиц изделий, и сделали каждого нашего
+                клиента
+                чуточку счастливей! Мы стремимся к инновациям и постоянному росту, поэтому мы всегда открыта для новых
+                проектов
+                и возможно, именно вас мы ждем в качестве нашего следующего партнера!</p>
+            <button class="yellowButton" href="#">Подробнее</button>
+        </div>
+    </div>
+    <img src="~/img/sepparation.png" alt="" style="width: 100%;">
+    <div class="container">
+        <div class="separation">
+            <p>НАША МИССИЯ</p>
+            <p>GIRAFFE</p>
+        </div>
+        <div class="mission">
+            <p>Наши основные принципы в работе — это открытость, прозрачность и профессионализм. Для нас очень важно
+                доверие клиента, поэтому каждый наш клиент это в первую очередь партнёр с которым мы проходим весь путь
+                от идеи до ее реализации. Главной составляющей для нас является работа в очень плотном контакте и
+                глубокая вовлеченность в процесс. Мы даем возможность нашим клиентам получить от нас положительные
+                эмоции от качественных и уникальных изделия для их бизнеса!</p>
+            <button class="yellowButton" href="#">Связаться с нами</button>
+        </div>
+        <div class="separation">
+            <p>ПОЧЕМУ НАМ ДОВЕРЯЮТ</p>
+            <p>GIRAFFE</p>
+        </div>
+        <div class="trustUs">
+            <h2>Почему нам доверяют?</h2>
+        </div>
+    </div>
+    <div class="trustNumbers">
+        <div class="trust1 mb-0">
+            <h3>01</h3>
+            <p>Вы видите весь процесс работы, так как мы скидываем фото и видео на всех этапах.</p>
+        </div>
+        <div class="trust2 mb-0">
+            <h3>02</h3>
+            <p>Вы уверены в качестве, так как мы напечатаем единичный, тестовый образец перед началом основной работы.
+            </p>
+        </div>
+        <div class="trust3 mb-0">
+            <h3>03</h3>
+            <p>Мы готовы взяться за срочные заказы от <strong>выполнения работы за один час</strong> до 1 рабочего дня.
+            </p>
+        </div>
+        <div class="trust4 mb-0">
+            <h3>04</h3>
+            <p>Мы беремся за сложные проекты и готовы предложить уникальные решения с брендированием.</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="separation">
+            <p>НАШИ УСЛУГИ</p>
+            <p>GIRAFFE</p>
+        </div>
+        <div class="services">
+            <h2 style="margin-bottom: 90px;">Наши услуги</h2>
+            <div class="cards">
+                <div class="servicesСard1">
+                    <div class="overlay">
+                        <div class="text-container">
+                            <h2 style="margin-right: 60px;">01</h2>
+                            <div class="numberNameCard">
+                                <h2>Шелкография</h2>
+                                <p>Метод печати с помощью трафаретов. Другое название нанесения — (шелко)трафаретная
+                                    печать. Это
+                                    самый старый способ переноса принта на ткань, известен еще со времен Древнего Китая.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                            <a href=""><img src="/img/arrowRight.png" alt="Arrow Icon" class="arrow-image"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesСard2">
+                    <div class="overlay">
+                        <div class="text-container">
+                            <h2 style="margin-right: 60px;">02</h2>
+                            <div class="numberNameCard">
+                                <h2>ДТФ</h2>
+                                <p>Технология цифровой печати на текстиле и текстильных изделиях, с использованием в
+                                    качестве промежуточного носителя изображения PET-плёнки</p>
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                            <a href=""><img src="/img/arrowRight.png" alt="Arrow Icon" class="arrow-image"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesСard3">
+                    <div class="overlay">
+                        <div class="text-container">
+                            <h2 style="margin-right: 60px;">03</h2>
+                            <div class="numberNameCard">
+                                <h2>Плоттерная резка</h2>
+                                <p>Технология, которая позволяет прорезать до подложки, высекать, перфорировать, резать
+                                    насквозь материал вдоль контура изображения из различных материалов, например, из
+                                    самоклеящейся плёнки.</p>
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                            <a href=""><img src="/img/arrowRight.png" alt="Arrow Icon" class="arrow-image"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesСard4">
+                    <div class="overlay">
+                        <div class="text-container">
+                            <h2 style="margin-right: 60px;">04</h2>
+                            <div class="numberNameCard">
+                                <h2>Puff-Print</h2>
+                                <p>Один из видов печати, при котором используется технология заключающаяся в добавлении
+                                    особых примесей в краску</p>
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                            <a href=""><img src="/img/arrowRight.png" alt="Arrow Icon" class="arrow-image"></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="yellowButton" href="#">Связаться с нами</button>
+            </div>
+        </div>
+        <div class="separation">
+            <p>С НАМИ СОТРУДНИЧАЛИ</p>
+            <p>GIRAFFE</p>
+        </div>
+        <div class="cooperation">
+            <h2>С нами сотрудничали</h2>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="~/img/sepparation.png" alt="SKOLKOVO Moscow School of Management">
+                        <img src="~/img/sepparation.png" alt="VKontakte">
+                    </div>
+                    <div class="slide">
+                        <img src="~/img/sepparation.png" alt="SKOLKOVO Moscow School of Management">
+                        <img src="~/img/sepparation.png" alt="VKontakte">
+                    </div>
+                </div>
+                <a class="prev" onclick="changeSlide(-1)"><img src="/img/arrowLeftBlack.png" alt=""></a>
+                <a class="next" onclick="changeSlide(1)"><img src="/img/arrowRightBlack.png" alt=""></a>
+            </div>
+        </div>
+        <div class="separation">
+            <p>ЗАЯВКА</p>
+            <p>GIRAFFE</p>
+        </div>
+        <div class="bid">
+            <h2>Хотите заказать у нас услугу?</h2>
+            <p>Заполните форму и мы с Вами свяжемся!</p>
+            <div class="inputs">
+                <div class="input-container">
+                    <input type="text" placeholder="Имя" class="custom-input">
+                    <img src="/img/user.png" alt="" class="icon">
+                </div>
+                <div class="input-container">
+                    <input type="tel" placeholder="Телефон" class="custom-input">
+                    <img src="/img/phone.png" alt="" class="icon">
+                </div>
+                <div class="input-container">
+                    <input type="email" placeholder="Почта" class="custom-input">
+                    <img src="/img/mail.png" alt="" class="icon">
+                </div>
+            </div>
+            <button class="yellowButton" href="#" style="margin-top: 70px;">Отправить</button>
+        </div>
+    </div>
+</main>

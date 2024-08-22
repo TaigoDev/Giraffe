@@ -2,13 +2,22 @@ html {
     font-size: 14px;
 }
 
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/font/Montserrat-Regular.ttf');
+}
+
 @media (min-width: 768px) {
     html {
         font-size: 16px;
     }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
@@ -18,18 +27,17 @@ html {
 }
 
 body {
-    margin-bottom: 60px;
+    margin: 0;
+    font-family: 'Montserrat';
 }
 
 .header-section {
     background-size: cover;
     background-position: center;
-    height: 20vh; /* Adjust the height as needed */
+    height: 20vh;
     background: none;
     background-image: url('/img/backgroundMain.png');
     height: 505px;
-    background-size: cover;
-    background-position: center;
     margin-bottom: 100px;
 }
 
@@ -45,13 +53,13 @@ body {
     border: none;
 }
 
-    .dropdown-menu .dropdown-item {
-        color: white;
-    }
+.dropdown-menu .dropdown-item {
+    color: white;
+}
 
-        .dropdown-menu .dropdown-item:hover {
-            background-color: #495057;
-        }
+.dropdown-menu .dropdown-item:hover {
+    background-color: #495057;
+}
 
 /* Button styles */
 .btn-outline-light {
@@ -68,12 +76,13 @@ body {
 .ContactUs {
     border: 1px solid #fff;
     border-radius: 22px;
-    width: 145px;
+    width: 160px;
     height: 35px;
-    padding: 9px 19px;
+    padding:  7px 20px 10px 20px;
     font-size: 13px;
     text-decoration: none;
     color: #fff;
+
 }
 
 .heading {
@@ -95,10 +104,10 @@ footer {
     height: 100%;
 }
 
-    .footer-text a {
-        font-weight: 600;
-        font-size: 17px;
-    }
+.footer-text a {
+    font-weight: 600;
+    font-size: 17px;
+}
 
 .socialMedia img {
     margin: 5px;
@@ -119,10 +128,11 @@ h2 {
     font-size: 34px;
     text-align: center;
     color: #2e2e2e;
-    width: 500px;
 }
 
-.greetings {
+.greetings,
+.mission,
+.trustUs {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,7 +140,7 @@ h2 {
     margin-bottom: 125px;
 }
 
-.greetings button {
+.yellowButton {
     border-radius: 55px;
     width: 183px;
     height: 44px;
@@ -143,10 +153,233 @@ h2 {
     border: 0;
 }
 
-.greetings p {
+.greetings p,
+.mission p {
     font-weight: 400;
     font-size: 20px;
     text-align: center;
     color: #565656;
     margin: 70px;
+}
+
+.trustNumbers {
+    background-image: url("/img/trustUs.png");
+    height: 1170px;
+    margin-bottom: 150px;
+}
+
+.trust1,
+.trust2,
+.trust3,
+.trust4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.trust1 h3,
+.trust2 h3,
+.trust3 h3,
+.trust4 h3 {
+    font-weight: 600;
+    font-size: 34px;
+    text-align: center;
+    color: #b4f115;
+}
+
+.trust1 p,
+.trust2 p,
+.trust3 p,
+.trust4 p {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    width: 600px;
+    margin-top: 40px;
+}
+
+
+.servicesСard1,
+.servicesСard2,
+.servicesСard3,
+.servicesСard4 {
+    position: relative;
+    border-radius: 26px;
+    width: 854px;
+    height: 274px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.servicesСard1 {
+    background-image: url('/img/shelkCard.png');
+}
+
+.servicesСard2 {
+    background-image: url('/img/dtfCard.png');
+}
+
+.servicesСard3 {
+    background-image: url('/img/plotterCard.png');
+}
+
+.servicesСard4 {
+    background-image: url('/img/puffCard.png');
+}
+
+.overlay {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 55px;
+}
+
+.text-container {
+    max-width: 70%;
+    display: flex;
+}
+
+.text-container h2 {
+    font-weight: 500;
+    font-size: 34px;
+    color: #fff;
+    width: auto;
+}
+
+.text-container p {
+    font-weight: 600;
+    font-size: 17px;
+    color: #afafaf;
+    width: 540px;
+}
+
+.icon-container {
+    width: 50px;
+    height: 50px;
+}
+
+.numberNameCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.services {
+    margin-top: 140px;
+}
+
+.services h2 {
+    width: auto;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: 350px;
+    margin-top: 150px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 80%;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.slide img {
+    max-width: 90%;
+    /* max-height: 160px; */
+    margin: 0 20px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    width: auto;
+    transition: 0.6s ease;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.cooperation {
+    margin-bottom: 150px;
+    margin-top: 120px;
+}
+
+.custom-input {
+    border-radius: 46px;
+    width: 318px;
+    height: 58px;
+    background: #1a1a1a;
+    outline: none;
+    border: none;
+    color: white;
+    padding-left: 32px; /* Отступ для текста */
+    font-size: 15px;
+    position: relative;
+}
+
+.custom-input::placeholder {
+    color: #8c8c8c; /* Цвет placeholder */
+}
+
+.icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px; /* Ширина иконки */
+    height: 24px; /* Высота иконки */
+}
+
+.input-container {
+    position: relative;
+    margin-right: 15px;
+}
+
+.bid {
+    background-image: url('/img/logo6%.png');
+    background-position: 55% 25%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px;
+    margin-bottom: 250px;
+}
+
+.bid p {
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.inputs {
+    display: flex;
 }
