@@ -1,0 +1,6 @@
+bind_port: 
+send_to: "studio@taigo.xyz"
+smtp_server: "smtp.mail.ru"
+smtp_port: 465
+mail_user: "test@taigo.xyz"
+mail_password: "VZagVms4tVJR3C11upEb"

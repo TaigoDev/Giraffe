@@ -1,4 +1,5 @@
 ﻿@page
+@using Giraffe.Components
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
@@ -199,24 +200,6 @@
             <p>ЗАЯВКА</p>
             <p>GIRAFFE</p>
         </div>
-        <div class="bid">
-            <h2>Хотите заказать у нас услугу?</h2>
-            <p>Заполните форму и мы с Вами свяжемся!</p>
-            <div class="inputs" id="form">
-                <div class="input-container">
-                    <input type="text" placeholder="Имя" class="custom-input">
-                    <img src="/img/user.png" alt="" class="icon">
-                </div>
-                <div class="input-container">
-                    <input type="tel" placeholder="Телефон" class="custom-input">
-                    <img src="/img/phone.png" alt="" class="icon">
-                </div>
-                <div class="input-container">
-                    <input type="email" placeholder="Почта" class="custom-input">
-                    <img src="/img/mail.png" alt="" class="icon">
-                </div>
-            </div>
-            <button class="yellowButton" href="#" style="margin-top: 70px;">Отправить</button>
-        </div>
+        @(await Html.RenderComponentAsync<ContactForm>(RenderMode.ServerPrerendered))
     </div>
 </main>
