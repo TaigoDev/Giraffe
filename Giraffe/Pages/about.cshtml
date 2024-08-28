@@ -1,0 +1,308 @@
+﻿@page
+@model Giraffe.Pages.aboutModel
+@{
+}
+
+<header class="header-section-about ">
+    <div class="container-fluid container">
+        <div class="d-flex justify-content-between align-items-center pt-5">
+            <div class="header-left">
+                <a class="navbar-brand" href="/Index">
+                    <img src="/img/logo.png" alt="Giraffe" width="150">
+                </a>
+            </div>
+            <div class="header-right d-flex align-items-center">
+                <nav class="nav">
+                    <a class="nav-link text-white" href="/Index">Главная</a>
+                    <a class="nav-link text-white" href="/about">О нас</a>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Услуги
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/SilkscreenPrinting">Шелкография</a></li>
+                            <li><a class="dropdown-item" href="/dtf">ДТФ</a></li>
+                            <li><a class="dropdown-item" href="/PlotterCutting">Плоттерная резка</a></li>
+                            <li><a class="dropdown-item" href="/Puff-Print">Puff-Print</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-link text-white" href="/Contacts">Контакты</a>
+                </nav>
+                <a class="text-white ContactUs" href="#form">Связаться с нами</a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <h1 class="text-center heading">О нас</h1>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="separation">
+            <p>НАША КОМАНДА</p>
+            <p>GIRAFFE</p>
+        </div>
+        <div class="comand">
+            <h2>Наша команда</h2>
+            <div class="profile-card-big">
+                <img src="/img/staff/kirill.png" alt="Profile Image" class="background">
+                <div class="info">
+                    <h2>Кирилл</h2>
+                    <p>Владелец студии</p>
+                </div>
+            </div>
+            <div class="row-container">
+                <div class="row justify-content-center">
+                    <div class="profile-card">
+                        <img src="/img/staff/polina.png" alt="Background Image" class="background">
+                        <div class="info">
+                            <h2>Полина</h2>
+                            <p>Руководитель производства</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <img src="/img/staff/feruz.png" alt="Background Image" class="background">
+                        <div class="info">
+                            <h2>Феруз</h2>
+                            <p>Старший печатник шелкотрафаретного цеха</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <img src="/img/staff/alena.png" alt="Background Image" class="background">
+                        <div class="info">
+                            <h2>Алена</h2>
+                            <p>Финансовый ассистент</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="profile-card">
+                        <img src="/img/staff/nastya.png" alt="Background Image" class="background">
+                        <div class="info">
+                            <h2>Настя</h2>
+                            <p>SMM менеджер</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <img src="/img/staff/ramil.png" alt="Background Image" class="background">
+                        <div class="info">
+                            <h2>Рамиль</h2>
+                            <p>Оператор ДТФ принтера</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <img src="/img/staff/shah.png" alt="Background Image" class="background">
+                        <div class="info">
+                            <h2>Шах</h2>
+                            <p>Печатник шелкотрафаретного цеха</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="profile-card">
+                        <img src="/img/staff/gulya.png" alt="Background Image" class="background">
+                        <div class="info">
+                            <h2>Гуля</h2>
+                            <p>Работник производственного цеха</p>
+                        </div>
+                    </div>
+                    <div class="profile-card">
+                        <img src="/img/staff/vitalya.png" alt="Background Image" class="background">
+                        <div class="info">
+                            <h2>Виталий</h2>
+                            <p>Работник производственного цеха</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="separation">
+            <p>НАШИ УСЛУГИ</p>
+            <p>GIRAFFE</p>
+        </div>
+        <div class="services">
+            <h2 style="margin-bottom: 90px;">Наши услуги</h2>
+            <div class="cards">
+                <div class="servicesСard1">
+                    <div class="overlay">
+                        <div class="text-container">
+                            <h2>01</h2>
+                            <div class="numberNameCard">
+                                <h2>Шелкография</h2>
+                                <p>Метод печати с помощью трафаретов. Другое название нанесения — (шелко)трафаретная
+                                    печать. Это
+                                    самый старый способ переноса принта на ткань, известен еще со времен Древнего Китая.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                            <a href=""><img src="/img/arrowRight.png" alt="Arrow Icon" class="arrow-image"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesСard2">
+                    <div class="overlay">
+                        <div class="text-container">
+                            <h2>02</h2>
+                            <div class="numberNameCard">
+                                <h2>ДТФ</h2>
+                                <p>Технология цифровой печати на текстиле и текстильных изделиях, с использованием в
+                                    качестве промежуточного носителя изображения PET-плёнки</p>
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                            <a href=""><img src="/img/arrowRight.png" alt="Arrow Icon" class="arrow-image"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesСard3">
+                    <div class="overlay">
+                        <div class="text-container">
+                            <h2>03</h2>
+                            <div class="numberNameCard">
+                                <h2>Плоттерная резка</h2>
+                                <p>Технология, которая позволяет прорезать до подложки, высекать, перфорировать, резать
+                                    насквозь материал вдоль контура изображения из различных материалов, например, из
+                                    самоклеящейся плёнки.</p>
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                            <a href=""><img src="/img/arrowRight.png" alt="Arrow Icon" class="arrow-image"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicesСard4">
+                    <div class="overlay">
+                        <div class="text-container">
+                            <h2>04</h2>
+                            <div class="numberNameCard">
+                                <h2>Puff-Print</h2>
+                                <p>Один из видов печати, при котором используется технология заключающаяся в добавлении
+                                    особых примесей в краску</p>
+                            </div>
+                        </div>
+                        <div class="icon-container">
+                            <a href=""><img src="/img/arrowRight.png" alt="Arrow Icon" class="arrow-image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="separation">
+            <p>ЭТАПЫ РАБОТЫ</p>
+            <p>GIRAFFE</p>
+        </div>
+        <div class="stages">
+            <h2>Этапы работы с нами</h2>
+            <div class="numbers">
+                <h3>01</h3>
+                <p>Первым делом вы заполняете форму на сайте после чего наш специалист свяжется с вами и
+                    проконсультирует вас по вашему заказу для дальнейшей работы.</p>
+            </div>
+            <div class="numbers">
+                <h3>02</h3>
+                <p>Далее мы создадим рабочие группы в месенджерах для активной связи.</p>
+            </div>
+            <div class="numbers">
+                <h3>03</h3>
+                <p>Если потребуется поможем с подготовкой тз к работе</p>
+            </div>
+            <div class="numbers">
+                <h3>04</h3>
+                <p>Так же поможем с отрисовкой макетов</p>
+            </div>
+            <div class="numbers">
+                <h3>05</h3>
+                <p>Проведем несколько этапов согласований перед запуском</p>
+            </div>
+            <div class="numbers">
+                <h3>06</h3>
+                <p>На протяжении всей работы будем высылать фото/видео отчёты</p>
+            </div>
+            <div class="numbers">
+                <h3>07</h3>
+                <p>Обязательно проведем ОТК</p>
+            </div>
+            <div class="numbers">
+                <h3>08</h3>
+                <p>По вашему запросу предоставим услуги упаковки и маркировки изделий</p>
+            </div>
+        </div>
+        <div class="separation">
+            <p>FAQ</p>
+            <p>GIRAFFE</p>
+        </div>
+        <div class="faq">
+            <div class="faqQuestion">
+                <span class="faqLabel">FAQ</span>
+                <h3>Сколько максимум цветов в нанесение можете использовать?</h3>
+                <p class="faqQuestionP">Что касается шелкографии - то мы используем максимум 8 цветов при печати. Если
+                    мы говорим о дтф то
+                    это
+                    полноцветная печать.</p>
+            </div>
+            <div class="acc-container">
+                <button class="acc-btn">Какие сроки выполнения заказов?</button>
+                <div class="acc-content">
+                    <p>
+
+                    </p>
+                </div>
+                <button class="acc-btn">Оформляете ли доставку?</button>
+                <div class="acc-content">
+                    <p>
+
+                    </p>
+                </div>
+                <button class="acc-btn">Какие есть способы оплаты?</button>
+                <div class="acc-content">
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="separation">
+            <p>ФОТОГРАФИИ</p>
+            <p>GIRAFFE</p>
+        </div>
+        <div class="photos">
+            <h2>Фотографии</h2>
+            <div class="slider" style="margin-bottom: 50px;">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="~/img/topImg.png" alt="" class="topImg">
+                        <img src="~/img/bottomLeftImg.png" alt="" class="bottomLeftImg">
+                        <img src="~/img/bottomRightImg.png" alt="" class="bottomRightImg">
+                        <img src="~/img/topRightImg.png" alt="" class="topRightImg">
+                        <img src="~/img/rightMiddleImg.png" alt="" class="rightMiddleImg">
+                        <img src="~/img/bottomImg.png" alt="" class="bottomImg">
+                    </div>
+                    <div class="slide">
+                        <img src="~/img/topImg.png" alt="" class="topImg">
+                        <img src="~/img/bottomLeftImg.png" alt="" class="bottomLeftImg">
+                        <img src="~/img/bottomRightImg.png" alt="" class="bottomRightImg">
+                        <img src="~/img/topRightImg.png" alt="" class="topRightImg">
+                        <img src="~/img/rightMiddleImg.png" alt="" class="rightMiddleImg">
+                        <img src="~/img/bottomImg.png" alt="" class="bottomImg">
+                    </div>
+                </div>
+                <a class="prev" onclick="changeSlide(-1)"><img src="/img/arrowLeftBlack.png" alt=""></a>
+                <a class="next" onclick="changeSlide(1)"><img src="/img/arrowRightBlack.png" alt=""></a>
+            </div>
+        </div>
+        <div class="separation">
+            <p>ЗАЯВКА</p>
+            <p>GIRAFFE</p>
+        </div>
+        <div class="bidLink">
+            <div class="bidForm">
+                <h3>Хотите заказать у нас услугу?</h3>
+                <div class="bidText">
+                    <p>Заполните форму и мы с Вами свяжемся!</p>
+                    <button class="yellowButton">Заполнить заявку</button>
+                </div>
+            </div>
+        </div>
+</main>

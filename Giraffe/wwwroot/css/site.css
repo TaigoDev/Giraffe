@@ -31,23 +31,54 @@ body {
     font-family: 'Montserrat';
 }
 
-.header-section {
+.header-section-main,
+.header-section-about,
+.header-section-silk,
+.header-section-dtf,
+.header-section-plotterCutting,
+.header-section-puff,
+.header-section-contact {
     background-size: cover;
     background-position: center;
     height: 20vh;
     background: none;
-    background-image: url('/img/backgroundMain.png');
     height: 505px;
     margin-bottom: 100px;
 }
 
-/* Navigation links */
+.header-section-main {
+    background-image: url('/img/backgroundMain.png');
+}
+
+.header-section-about {
+    background-image: url('/img/backgroundAbout.png');
+}
+
+.header-section-silk {
+    background-image: url('/img/backgroundSilk.png');
+}
+
+.header-section-dtf {
+    background-image: url('/img/backgroundDtf.png');
+}
+
+.header-section-plotterCutting {
+    background-image: url('/img/backgroundPlotter.png');
+}
+
+.header-section-puff {
+    background-image: url('/img/backgroundPlotter.png');
+}
+
+.header-section-contact {
+    background-image: url('/img/backgroundContact.png');
+}
+
 .nav-link {
     font-size: 1rem;
     margin-right: 20px;
 }
 
-/* Dropdown menu styles */
 .dropdown-menu {
     background-color: #343a40;
     border: none;
@@ -61,13 +92,11 @@ body {
     background-color: #495057;
 }
 
-/* Button styles */
 .btn-outline-light {
     font-size: 0.9rem;
     padding: 8px 20px;
 }
 
-/* Adjust the logo size and spacing */
 .header-left img {
     max-height: 50px;
     height: auto;
@@ -78,11 +107,10 @@ body {
     border-radius: 22px;
     width: 160px;
     height: 35px;
-    padding:  7px 20px 10px 20px;
+    padding: 7px 20px 10px 20px;
     font-size: 13px;
     text-decoration: none;
     color: #fff;
-
 }
 
 .heading {
@@ -120,7 +148,7 @@ footer {
     font-size: 17px;
     color: #7b7b7b;
     border-bottom: 1px solid #8f8f8f;
-    width: 1190px;
+    /* width: 1190px; */
 }
 
 h2 {
@@ -130,9 +158,14 @@ h2 {
     color: #2e2e2e;
 }
 
+.greetings h2 {
+    width: 500px;
+}
+
 .greetings,
 .mission,
-.trustUs {
+.trustUs,
+.infoProduct {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,7 +187,8 @@ h2 {
 }
 
 .greetings p,
-.mission p {
+.mission p,
+.infoProduct p {
     font-weight: 400;
     font-size: 20px;
     text-align: center;
@@ -249,6 +283,7 @@ h2 {
     font-size: 34px;
     color: #fff;
     width: auto;
+    margin-right: 60px;
 }
 
 .text-container p {
@@ -286,17 +321,17 @@ h2 {
 
 .slider {
     position: relative;
-    max-width: 100%;
+    max-width: 93%;
     margin: auto;
     overflow: hidden;
-    height: 350px;
+    height: 500px;
     margin-top: 150px;
 }
 
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    height: 80%;
+    height: 100%;
 }
 
 .slide {
@@ -311,14 +346,15 @@ h2 {
 .slide img {
     max-width: 90%;
     /* max-height: 160px; */
-    margin: 0 20px;
+    /* margin: 0 20px; */
+    margin-right: 30px;
 }
 
 .prev,
 .next {
     cursor: pointer;
     position: absolute;
-    top: 90%;
+    top: 85%;
     width: auto;
     transition: 0.6s ease;
 }
@@ -341,13 +377,13 @@ h2 {
     outline: none;
     border: none;
     color: white;
-    padding-left: 32px; /* Отступ для текста */
+    padding-left: 32px;
     font-size: 15px;
     position: relative;
 }
 
 .custom-input::placeholder {
-    color: #8c8c8c; /* Цвет placeholder */
+    color: #8c8c8c;
 }
 
 .icon {
@@ -355,8 +391,8 @@ h2 {
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    width: 24px; /* Ширина иконки */
-    height: 24px; /* Высота иконки */
+    width: 24px;
+    height: 24px;
 }
 
 .input-container {
@@ -382,4 +418,694 @@ h2 {
 
 .inputs {
     display: flex;
+}
+
+.comand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.comand h2 {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.profile-card-big {
+    position: relative;
+    width: 950px;
+    height: 375px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.profile-card-big img.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.profile-card img.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 90px;
+    padding: 10px;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 26px;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin: 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.info p::before {
+    content: url('/img/userGray.png');
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.stages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stages h2 {
+    margin-bottom: 75px;
+    margin-top: 100px;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 750px;
+    margin-bottom: 70px;
+}
+
+.numbers h3 {
+    font-weight: 500;
+    font-size: 34px;
+    color: #3f3f3f;
+}
+
+.numbers p {
+    width: 600px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #565656;
+}
+
+
+.faq {
+    color: #fff;
+    margin-top: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+
+.faqQuestion {
+    position: relative;
+    background-color: #1c1c1c;
+    border-radius: 31px;
+    width: 550px;
+    height: 450px;
+    padding-top: 130px;
+    padding-bottom: 85px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.faqLabel {
+    position: absolute;
+    top: -15px;
+    left: 0px;
+    font-weight: 500;
+    font-size: 65px;
+    color: #2a2a2a;
+    margin: 0;
+}
+
+.faqQuestion h3 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.faqQuestionP {
+    font-weight: 400;
+    font-size: 20px;
+    color: #a6a6a6;
+    width: 370px;
+}
+
+.acc-container {
+    width: 660px;
+}
+
+.acc-btn {
+    width: 100%;
+    padding: 22px 31px;
+    cursor: pointer;
+    background: inherit;
+    border: none;
+    outline: none;
+    text-align: left;
+    transition: all 0.5s linear;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    background-color: #1c1c1c;
+    height: 132px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.acc-btn:after {
+    content: url('/img/plus.png');
+}
+
+.acc-content {
+    max-height: 0;
+    color: var(--black-base-color);
+    margin: 0 2rem;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+}
+
+.backgroundFaq {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 500;
+    font-size: 65px;
+    color: #2a2a2a;
+}
+
+.topImg {
+    width: 770px;
+    height: 325px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bottomLeftImg {
+    width: 385px;
+    height: 375px;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+}
+
+.bottomRightImg {
+    width: 350px;
+    height: 375px;
+    position: absolute;
+    bottom: 70px;
+    left: 420px;
+}
+
+.topRightImg {
+    width: 400px;
+    height: 220px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.rightMiddleImg {
+    width: 400px;
+    height: 220px;
+    position: absolute;
+    right: 0;
+    top: 250px;
+}
+
+.bottomImg {
+    width: 400px;
+    height: 220px;
+    position: absolute;
+    right: 0;
+    bottom: 70px;
+}
+
+.photos h2 {
+    margin-top: 95px;
+}
+
+.bidLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bidForm {
+    background-image: url('/img/bidForm.png');
+    background-repeat: no-repeat;
+    width: 90%;
+    border-radius: 31px;
+    height: 326px;
+    overflow: hidden;
+    padding: 80px 100px 70px 85px;
+    margin-top: 130px;
+    margin-bottom: 125px;
+}
+
+.bidForm img {
+    width: 100%;
+    height: auto;
+}
+
+.bidForm h3 {
+    font-weight: 600;
+    font-size: 37px;
+    color: #fff;
+    width: 335px;
+}
+
+.bidForm p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #a6a6a6;
+    width: 250px;
+}
+
+.bidText {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts {
+    display: flex;
+    background: url('/img/contactCard.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 900px;
+    height: 320px;
+    max-width: 100%;
+    margin-top: 75px;
+}
+
+.contact-info, .adress-info {
+    padding-top: 85px;
+    padding-bottom: 120px;
+    padding-left: 85px;
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-weight: 600;
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+
+.contact-info p img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.adress {
+    display: flex;
+    background: url('/img/backgroundAdress.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 900px;
+    height: 320px;
+    max-width: 100%;
+    margin-top: 75px;
+}
+
+.adress-info h3 {
+    font-weight: 600;
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.adress-info p {
+    margin: 10px 0;
+    display: flex;
+    font-size: 17px;
+    width: 315px;
+}
+
+.adress-info p img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.adressAndLoc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 180px;
+}
+
+@media (max-width: 992px) {
+
+    .header-left {
+        width: 20%;
+    }
+
+    .header-left img {
+        width: 100px;
+    }
+
+    .nav {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .ContactUs {
+        width: 130px;
+        font-size: 10px;
+        padding: 9px 10px 10px 18px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    .separation {
+        width: 385px;
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .greetings h2 {
+        width: 400px;
+    }
+
+    .greetings p,
+    .mission p,
+    .infoProduct p {
+        margin: 50px 10px 50px 10px;
+        font-size: 17px;
+    }
+
+    .trust1 h3,
+    .trust2 h3,
+    .trust3 h3,
+    .trust4 h3 {
+        font-size: 22px;
+    }
+
+    .trust1 p,
+    .trust2 p,
+    .trust3 p,
+    .trust4 p {
+        font-size: 17px;
+        width: 400px;
+    }
+
+    .servicesСard1,
+    .servicesСard2,
+    .servicesСard3,
+    .servicesСard4 {
+        position: relative;
+        border-radius: 26px;
+        width: 390px;
+        height: 335px;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        color: white;
+        margin-bottom: 50px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-container {
+        max-width: 80%;
+        flex-direction: column;
+    }
+
+    .text-container h2 {
+        margin-right: 0px;
+        font-size: 25px;
+    }
+
+    .text-container p {
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .cards {
+        margin-bottom: 100px;
+    }
+
+    .cooperation {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .slider {
+        margin-top: 20px;
+        height: 150px;
+    }
+
+    .slides {
+        height: auto;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 70%;
+        width: auto;
+        transition: 0.6s ease;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-container {
+        margin-bottom: 20px;
+    }
+
+    .bid {
+        background-size: 380px;
+        margin-bottom: 100px;
+    }
+
+    .bid p {
+        margin-bottom: 50px;
+    }
+
+    .footer-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+
+    .profile-card-big {
+        position: relative;
+        width: 400px;
+    }
+
+    .profile-card-big img.background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .numbers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+        margin-bottom: 20px;
+    }
+
+    .numbers h3 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #3f3f3f;
+    }
+
+    .numbers p {
+        width: 300px;
+        font-weight: 400;
+        font-size: 15px;
+        color: #565656;
+    }
+
+    .faq {
+        color: #fff;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faqQuestion {
+        position: relative;
+        background-color: #1c1c1c;
+        border-radius: 31px;
+        width: 390px;
+        height: 350px;
+        padding-top: 90px;
+        padding-bottom: 85px;
+        padding-left: 70px;
+        padding-right: 70px;
+        margin-bottom: 20px;
+    }
+
+    .faqLabel {
+        position: absolute;
+        top: -15px;
+        left: 0px;
+        font-weight: 500;
+        font-size: 65px;
+        color: #2a2a2a;
+        margin: 0;
+    }
+
+    .faqQuestion h3 {
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+
+    .faqQuestionP {
+        font-weight: 400;
+        font-size: 15px;
+        color: #a6a6a6;
+        width: 250px;
+    }
+
+    .acc-container {
+        width: 390px;
+    }
+    
+    .acc-btn {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    
+    .bidForm {
+        background-repeat: no-repeat;
+        width: 350px;
+        border-radius: 31px;
+        height: 326px;
+        overflow: hidden;
+        padding: 50px 100px 70px 20px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+    
+    .bidForm h3 {
+        font-weight: 600;
+        font-size: 25px;
+        color: #fff;
+        width: 335px;
+    }
+    
+    .bidForm p {
+        font-weight: 400;
+        font-size: 15px;
+        color: #a6a6a6;
+        width: 250px;
+    }
+    
+    .bidText {
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        padding-top: 85px;
+        padding-bottom: 120px;
+        padding-left: 45px;
+        flex: 1;
+    }
+
+    .adress-info {
+        padding-top: 60px;
+        padding-bottom: 120px;
+        padding-left: 45px;
+        flex: 1;
+    }
+
+    .adress-info p {
+        width: 250px;
+    }
 }

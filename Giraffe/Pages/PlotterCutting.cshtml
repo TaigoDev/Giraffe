@@ -1,0 +1,87 @@
+﻿@page
+@model Giraffe.Pages.PlotterCuttingModel
+@{
+}
+<header class="header-section-plotterCutting">
+    <div class="container-fluid container">
+        <div class="d-flex justify-content-between align-items-center pt-5">
+            <div class="header-left">
+                <a class="navbar-brand" href="/Index">
+                    <img src="/img/logo.png" alt="Giraffe" width="150">
+                </a>
+            </div>
+            <div class="header-right d-flex align-items-center">
+                <nav class="nav">
+                    <a class="nav-link text-white" href="/Index">Главная</a>
+                    <a class="nav-link text-white" href="/about">О нас</a>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Услуги
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/SilkscreenPrinting">Шелкография</a></li>
+                            <li><a class="dropdown-item" href="/dtf">ДТФ</a></li>
+                            <li><a class="dropdown-item" href="/PlotterCutting">Плоттерная резка</a></li>
+                            <li><a class="dropdown-item" href="/Puff-Print">Puff-Print</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-link text-white" href="/Contacts">Контакты</a>
+                </nav>
+                <a class="text-white ContactUs" href="#form">Связаться с нами</a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <h1 class="text-center heading">Плоттерная резка</h1>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="separation">
+            <p>ОПИСАНИЕ УСЛУГИ</p>
+            <p>GIRAFFE</p>
+        </div>
+        <div class="infoProduct" style="margin-bottom: 0;">
+            <h2>Что такое плоттерная резка?</h2>
+            <p>это технология которая позволяет с высокой точностью вырезать векторные изображения на пленке с подложкой
+                любого нужного вам формата. Плоттерный станок нарезает острыми ножами текст либо рисунок любой
+                сложности!</p>
+        </div>
+        <div class="separation">
+            <p>НАШИ РАБОТЫ</p>
+            <p>GIRAFFE</p>
+        </div>
+        <div class="slider" style="margin-bottom: 50px;">
+            <div class="slides">
+                <div class="slide">
+                    <img src="~/img/topImg.png" alt="" class="topImg">
+                    <img src="~/img/bottomLeftImg.png" alt="" class="bottomLeftImg">
+                    <img src="~/img/bottomRightImg.png" alt="" class="bottomRightImg">
+                    <img src="~/img/topRightImg.png" alt="" class="topRightImg">
+                    <img src="~/img/rightMiddleImg.png" alt="" class="rightMiddleImg">
+                    <img src="~/img/bottomImg.png" alt="" class="bottomImg">
+                </div>
+                <div class="slide">
+                    <img src="~/img/topImg.png" alt="" class="topImg">
+                    <img src="~/img/bottomLeftImg.png" alt="" class="bottomLeftImg">
+                    <img src="~/img/bottomRightImg.png" alt="" class="bottomRightImg">
+                    <img src="~/img/topRightImg.png" alt="" class="topRightImg">
+                    <img src="~/img/rightMiddleImg.png" alt="" class="rightMiddleImg">
+                    <img src="~/img/bottomImg.png" alt="" class="bottomImg">
+                </div>
+            </div>
+            <a class="prev" onclick="changeSlide(-1)"><img src="/img/arrowLeftBlack.png" alt=""></a>
+            <a class="next" onclick="changeSlide(1)"><img src="/img/arrowRightBlack.png" alt=""></a>
+        </div>
+        <div class="bidLink">
+            <div class="bidForm">
+                <h3>Хотите заказать у нас услугу?</h3>
+                <div class="bidText">
+                    <p>Заполните форму и мы с Вами свяжемся!</p>
+                    <button class="yellowButton">Заполнить заявку</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
