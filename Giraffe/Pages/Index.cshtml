@@ -181,26 +181,26 @@
         </div>
         <div class="cooperation">
             <h2>С нами сотрудничали</h2>
-            <div class="slider">
-                <div class="slides">
-                    <div class="slide">
-                        <img src="~/img/example3.png" alt="SKOLKOVO Moscow School of Management">
-                        <img src="~/img/example3.png" alt="VKontakte">
-                        <img src="~/img/example3.png" alt="VKontakte">
-                    </div>
-                    <div class="slide">
-                        <img src="~/img/example3.png" alt="SKOLKOVO Moscow School of Management">
-                        <img src="~/img/example3.png" alt="VKontakte">
-                    </div>
+            <div class="slder-cad-small">
+                <div class="cad-img-small">
+                    <img src="/img/collabed/B_black.png" alt="Image 1" draggable="false">
+                    <img src="/img/collabed/hydrop.png" alt="Image 2" draggable="false">
+                    <img src="/img/collabed/Kashinaka-Logo-White.png" alt="Image 3" draggable="false">
+                    <img src="/img/collabed/logo.png" alt="Image 1" draggable="false">
+                    <img src="/img/collabed/scrmerch.png" alt="Image 2" draggable="false">
+                    <img src="/img/collabed/the orlines.png" alt="Image 3" draggable="false">
+                    <img src="/img/collabed/VK_Full_Logo_(2021-present).svg.png" alt="Image 2" draggable="false">
+                    <img src="/img/collabed/noname.png" alt="Image 3" draggable="false">
                 </div>
-                <a class="prev" onclick="changeSlide(-1)"><img src="/img/arrowLeftBlack.png" alt=""></a>
-                <a class="next" onclick="changeSlide(1)"><img src="/img/arrowRightBlack.png" alt=""></a>
+                <div class="buttons-slider">
+                    <img src="/img/arrowLeftBlack.png" alt="Previous" id="left">
+                    <img src="/img/arrowRightBlack.png" alt="Next" id="right">
+                </div>
             </div>
+            <div class="separation">
+                <p>ЗАЯВКА</p>
+                <p>GIRAFFE</p>
+            </div>
+                @(await Html.RenderComponentAsync<ContactForm>(RenderMode.ServerPrerendered))
         </div>
-        <div class="separation">
-            <p>ЗАЯВКА</p>
-            <p>GIRAFFE</p>
-        </div>
-        @(await Html.RenderComponentAsync<ContactForm>(RenderMode.ServerPrerendered))
-    </div>
 </main>

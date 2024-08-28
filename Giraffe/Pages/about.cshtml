@@ -243,22 +243,24 @@
                     полноцветная печать.</p>
             </div>
             <div class="acc-container">
-                <button class="acc-btn">Какие сроки выполнения заказов?</button>
+                <button class="acc-btn">Какие есть способы оплаты?</button>
                 <div class="acc-content">
                     <p>
-
+                        Оплатить можно наличными либо по расчетному счету со всеми
+                        необходимыми закрывающими документами.
                     </p>
                 </div>
                 <button class="acc-btn">Оформляете ли доставку?</button>
                 <div class="acc-content">
                     <p>
-
+                        Забрать заказ можно самовывозом, dostavista, яндекс доставка в г. Москва,
+                        так же возможна отправка СДЭК по России.
                     </p>
                 </div>
-                <button class="acc-btn">Какие есть способы оплаты?</button>
+                <button class="acc-btn">Какие сроки выполнения заказа?</button>
                 <div class="acc-content">
                     <p>
-
+                        В зависимости от тиража, от 1-14 дней.
                     </p>
                 </div>
             </div>
@@ -269,28 +271,49 @@
         </div>
         <div class="photos">
             <h2>Фотографии</h2>
-            <div class="slider" style="margin-bottom: 50px;">
-                <div class="slides">
-                    <div class="slide">
-                        <img src="~/img/topImg.png" alt="" class="topImg">
-                        <img src="~/img/bottomLeftImg.png" alt="" class="bottomLeftImg">
-                        <img src="~/img/bottomRightImg.png" alt="" class="bottomRightImg">
-                        <img src="~/img/topRightImg.png" alt="" class="topRightImg">
-                        <img src="~/img/rightMiddleImg.png" alt="" class="rightMiddleImg">
-                        <img src="~/img/bottomImg.png" alt="" class="bottomImg">
+            <div class="slider-container">
+                <img src="/img/arrowLeftBlack.png" alt="Previous" id="left" class="slider-button">
+                <img src="/img/arrowRightBlack.png" alt="Next" id="right" class="slider-button">
+                <div class="slider-slide active">
+                    <div class="slider-row">
+                        <div class="slider-large">
+                            <img src="/img/about/1.jpg" alt="Large Image 1">
+                        </div>
+                        <div class="slider-small">
+                            <img src="/img/about/2.jpg" alt="Small Image 1">
+                        </div>
                     </div>
-                    <div class="slide">
-                        <img src="~/img/topImg.png" alt="" class="topImg">
-                        <img src="~/img/bottomLeftImg.png" alt="" class="bottomLeftImg">
-                        <img src="~/img/bottomRightImg.png" alt="" class="bottomRightImg">
-                        <img src="~/img/topRightImg.png" alt="" class="topRightImg">
-                        <img src="~/img/rightMiddleImg.png" alt="" class="rightMiddleImg">
-                        <img src="~/img/bottomImg.png" alt="" class="bottomImg">
+                    <div class="slider-row">
+                        <div class="slider-small">
+                            <img src="/img/about/4.jpg" alt="Small Image 2">
+                        </div>
+                        <div class="slider-large">
+                            <img src="/img/about/3.jpg" alt="Large Image 2">
+                        </div>
                     </div>
                 </div>
-                <a class="prev" onclick="changeSlide(-1)"><img src="/img/arrowLeftBlack.png" alt=""></a>
-                <a class="next" onclick="changeSlide(1)"><img src="/img/arrowRightBlack.png" alt=""></a>
+
+                <!-- Добавьте второй слайд, если нужно -->
+                <div class="slider-slide">
+                    <div class="slider-row">
+                        <div class="slider-large">
+                            <img src="/img/about/5.jpg" alt="Large Image 3">
+                        </div>
+                        <div class="slider-small">
+                            <img src="/img/about/6.jpg" alt="Small Image 3">
+                        </div>
+                    </div>
+                    <div class="slider-row">
+                        <div class="slider-small">
+                            <img src="/img/about/7.jpg" alt="Small Image 4">
+                        </div>
+                        <div class="slider-large">
+                            <img src="/img/about/8.jpg" alt="Large Image 4">
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
         <div class="separation">
             <p>ЗАЯВКА</p>
