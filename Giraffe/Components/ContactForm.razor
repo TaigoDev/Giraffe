@@ -2,10 +2,6 @@
 <div class="bid">
     <h2>Хотите заказать у нас услугу?</h2>
     <p>Заполните форму и мы с Вами свяжемся!</p>
-    @if (Message is not null)
-    {
-        <p>@Message</p>
-    }
     <div class="inputs" id="form">
         <div class="input-container">
             <input type="text" placeholder="Имя" class="custom-input" @bind-value="FirstName" @bind-value:event="oninput">
@@ -21,7 +17,10 @@
         </div>
     </div>
     <button class="yellowButton" @onclick="async () => await OnSubmit()" style="margin-top: 70px;" type="button">Отправить</button>
-    <div class="message">
-        <p>Заявка оставлена</p>
-    </div>
+    @if (Message is not null)
+    {
+        <div class="message @Class">
+            <p>@Message</p>
+        </div>
+    }
 </div>
