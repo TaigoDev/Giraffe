@@ -72,6 +72,7 @@ body {
 
 .header-section-contact {
     background-image: url('/img/backgroundContact.png');
+    background-size: cover;
 }
 
 .nav-link {
@@ -184,6 +185,9 @@ h2 {
     display: inline;
     outline: none;
     border: 0;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
 }
 
 .greetings p,
@@ -842,27 +846,24 @@ h2 {
     margin-bottom: 180px;
 }
 
-
-
-
-
-
-
-
-
-
-
 .slider-container {
     position: relative;
-    width: 1100px; 
-    margin: 0 auto; 
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* Слайдер и кнопки в колонку */
+    align-items: center;
+    /* Центрирование слайдов */
+    margin-top: 95px;
+    margin-bottom: 120px;
 }
 
 .slider-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px; /* Отступ между строками */
+    margin-bottom: 20px;
 }
 
 .slider-large {
@@ -870,12 +871,16 @@ h2 {
     height: 360px;
     overflow: hidden;
     position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .slider-large img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 30px;
+    filter: grayscale(100%);
 }
 
 .slider-small {
@@ -883,12 +888,21 @@ h2 {
     height: 360px;
     overflow: hidden;
     position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .slider-small img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 30px;
+    filter: grayscale(100%);
+}
+
+.slider-small img:hover,
+.slider-large img:hover {
+    filter: grayscale(0);
 }
 
 .slider-slide {
@@ -896,29 +910,39 @@ h2 {
 }
 
 .slider-slide.active {
-    display: block; 
+    display: block;
+}
+
+.slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    /* Отступ сверху */
 }
 
 .slider-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     width: 40px;
     height: 40px;
     cursor: pointer;
-    z-index: 10;
+    margin: 0 10px;
 }
 
-#left {
-    left: 10px; 
+.message {
+    position: absolute;
+    bottom: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #b4f115;
+    height: 60px;
+    min-width: 288px;
+    max-width: 500px;
+    border-radius: 30px;
+    font-weight: 500;
+    background-color: #1a1a1a;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px 0px rgba(0, 0, 0, .14), 0px 1px 18px 0px rgba(0, 0, 0, .12);
 }
-
-#right {
-    right: 10px; 
-}
-
-  
-  
 
 
 
@@ -1210,5 +1234,24 @@ h2 {
 
     .adress-info p {
         width: 250px;
+    }
+
+    .slider-row {
+        flex-direction: column; /* Меняем направление на колонку для мобильных */
+        align-items: center; /* Центрируем все элементы */
+    }
+
+    .slider-large, .slider-small {
+        width: 90%; /* Делаем изображения более узкими, чтобы поместились на экран */
+        margin-bottom: 10px; /* Отступ между изображениями */
+    }
+
+    .slider-buttons {
+        margin-top: 10px; /* Уменьшаем отступ сверху */
+    }
+
+    .slider-button {
+        width: 30px; /* Уменьшаем размер кнопок */
+        height: 30px;
     }
 }
