@@ -1,6 +1,7 @@
 ﻿@page
 @model Giraffe.Pages.PlotterCuttingModel
 @{
+    ViewData["Title"] = "Плоттерная резка";
 }
 <header class="header-section-plotterCutting">
     <div class="container-fluid container">
@@ -52,7 +53,30 @@
             <p>НАШИ РАБОТЫ</p>
             <p>GIRAFFE</p>
         </div>
-
+        <div class="slider-container">
+            <div class="slider-slide active">
+                <div class="slider-row">
+                    <div class="slider-large">
+                        <img src="/img/plotter/1.jpg" alt="Large Image 1">
+                    </div>
+                    <div class="slider-small">
+                        <img src="/img/plotter/2.jpg" alt="Small Image 1">
+                    </div>
+                </div>
+                <div class="slider-row">
+                    <div class="slider-small">
+                        <img src="/img/plotter/4.jpg" alt="Small Image 2">
+                    </div>
+                    <div class="slider-large">
+                        <img src="/img/plotter/3.jpg" alt="Large Image 2">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-buttons">
+                <img src="/img/arrowLeftBlack.png" alt="Previous" id="left" class="slider-button">
+                <img src="/img/arrowRightBlack.png" alt="Next" id="right" class="slider-button">
+            </div>
+        </div>
         <div class="bidLink">
             <div class="bidForm-plotter">
                 <h3>Хотите заказать у нас услугу?</h3>

@@ -1,6 +1,7 @@
 ﻿@page
 @model Giraffe.Pages.SilkscreenPrintingModel
 @{
+    ViewData["Title"] = "Шелкография";
 }
 <header class="header-section-silk">
     <div class="container-fluid container">
@@ -86,3 +87,12 @@
         </div>
     </div>
 </main>
+<!-- Модальное окно для просмотра изображений -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div class="modal-nav">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+    </div>
+</div>
