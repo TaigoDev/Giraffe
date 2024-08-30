@@ -1,4 +1,6 @@
-bind_port: 
+bind_port:
+AppId: 10465
+AppKey: "0MjFlLWI5NTctNjUyNTVjMDZhY2UyIiwic3dhZ2dlciI6IkZhbHNlIiwibmJmIjoxNzI0OTk1MjI3LCJleHAiOjE3MzI3NzEyMjcsImlhdCI6MTcyNDk5NT"
 send_to: "studio@taigo.xyz"
 smtp_server: "smtp.mail.ru"
 smtp_port: 465

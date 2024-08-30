@@ -1,6 +1,9 @@
 using Giraffe;
+using Environment = TAIGO.ID.Environment.Environment;
 
 await Configurator.init();
+if(!Directory.Exists(Path.Combine(Directory.GetCurrentDirectory(), "Logs")))
+    Directory.CreateDirectory(Path.Combine(Directory.GetCurrentDirectory(), "Logs"));
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddRazorComponents()
@@ -16,4 +19,6 @@ app.MapBlazorHub();
 app.UseRouting();
 app.UseAuthorization();
 app.MapRazorPages();
-app.Run();
+await Environment.init(app, Configurator.config.AppId, Configurator.config.AppKey);
+await app.RunAsync();
+await app.WaitForShutdownAsync();

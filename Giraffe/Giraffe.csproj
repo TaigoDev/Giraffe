@@ -17,7 +17,13 @@
   <ItemGroup>
     <PackageReference Include="MailKit" Version="4.7.1.1" />
     <PackageReference Include="MimeKit" Version="4.7.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="YamlDotNet" Version="16.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="TAIGO.ID.Environment-8.0.6.0">
+      <HintPath>TAIGO.ID.Environment-8.0.6.0.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
