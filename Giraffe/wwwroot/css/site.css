@@ -728,8 +728,11 @@ h2 {
     align-items: center;
 }
 
-.bidForm {
-    background-image: url('/img/bidForm.png');
+.bidForm,
+.bidForm-silk,
+.bidForm-plotter,
+.bidForm-puff,
+.bidForm-dtf {
     background-repeat: no-repeat;
     width: 90%;
     border-radius: 31px;
@@ -740,19 +743,51 @@ h2 {
     margin-bottom: 125px;
 }
 
-.bidForm img {
+.bidForm {
+    background-image: url('/img/bidForm.png');
+}
+
+.bidForm-silk {
+    background-image: url('/img/bidFormSilk.png');
+}
+
+.bidForm-plotter {
+    background-image: url('/img/bidFormPlotter.png');
+}
+
+.bidForm-puff {
+    background-image: url('/img/bidFormPuff.png');
+}
+
+.bidForm-dtf {
+    background-image: url('/img/bidFormDtf.png');
+}
+
+.bidForm img,
+.bidForm-silk img,
+.bidForm-plotter img,
+.bidForm-puff img,
+.bidForm-dtf img {
     width: 100%;
     height: auto;
 }
 
-.bidForm h3 {
+.bidForm h3,
+.bidForm-silk h3,
+.bidForm-plotter h3,
+.bidForm-puff h3,
+.bidForm-dtf h3 {
     font-weight: 600;
     font-size: 37px;
     color: #fff;
     width: 335px;
 }
 
-.bidForm p {
+.bidForm p,
+.bidForm-silk p,
+.bidForm-plotter p,
+.bidForm-puff p,
+.bidForm-dtf p {
     font-weight: 400;
     font-size: 20px;
     color: #a6a6a6;
@@ -930,22 +965,22 @@ h2 {
 
 .message {
     position: absolute;
-    bottom: 400px;
+    bottom: 5.8%;
+    left: 14%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #b4f115;
+    border: 2px solid #b4f115;
     height: 60px;
     min-width: 288px;
     max-width: 500px;
     border-radius: 30px;
     font-weight: 500;
-    background-color: #1a1a1a;
     box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, .2), 0px 6px 10px 0px rgba(0, 0, 0, .14), 0px 1px 18px 0px rgba(0, 0, 0, .12);
     animation: join 2s ease 0s 1 normal forwards;
 }
 
-.exit{
+.exit {
     animation: exit 1s ease 0s 1 normal forwards;
 }
 
@@ -1085,7 +1120,12 @@ h2 {
     }
 
     .cad-img-small img {
-        width: calc(100% / 2);
+        width: 100%;
+        height: auto;
+    }
+
+    .cad-img img {
+        width: 100%;
     }
 
     .inputs {
@@ -1208,25 +1248,37 @@ h2 {
         font-size: 15px;
     }
 
-    .bidForm {
+    .bidForm,
+    .bidForm-silk,
+    .bidForm-plotter,
+    .bidForm-puff,
+    .bidForm-dtf {
         background-repeat: no-repeat;
         width: 350px;
         border-radius: 31px;
         height: 326px;
         overflow: hidden;
-        padding: 50px 100px 70px 20px;
+        padding: 50px 100px 70px 40px;
         margin-top: 30px;
         margin-bottom: 100px;
     }
 
-    .bidForm h3 {
+    .bidForm h3,
+    .bidForm-silk h3,
+    .bidForm-plotter h3,
+    .bidForm-puff h3,
+    .bidForm-dtf h3 {
         font-weight: 600;
         font-size: 25px;
         color: #fff;
         width: 335px;
     }
 
-    .bidForm p {
+    .bidForm p,
+    .bidForm-silk p,
+    .bidForm-plotter p,
+    .bidForm-puff p,
+    .bidForm-dtf p {
         font-weight: 400;
         font-size: 15px;
         color: #a6a6a6;
@@ -1258,21 +1310,31 @@ h2 {
     }
 
     .slider-row {
-        flex-direction: column; /* Меняем направление на колонку для мобильных */
-        align-items: center; /* Центрируем все элементы */
+        flex-direction: column;
+        align-items: center;
     }
 
-    .slider-large, .slider-small {
-        width: 90%; /* Делаем изображения более узкими, чтобы поместились на экран */
-        margin-bottom: 10px; /* Отступ между изображениями */
+    .slider-large,
+    .slider-small {
+        width: 90%;
+        margin-bottom: 10px;
     }
 
     .slider-buttons {
-        margin-top: 10px; /* Уменьшаем отступ сверху */
+        margin-top: 10px;
     }
 
     .slider-button {
-        width: 30px; /* Уменьшаем размер кнопок */
+        width: 30px;
         height: 30px;
+    }
+
+    .footer-text .nav-link {
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-text .navbar-brand {
+        margin: 0;
     }
 }
