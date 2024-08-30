@@ -190,6 +190,10 @@ h2 {
     padding: 10px;
 }
 
+.yellowButton:hover {
+    color: #000;
+}
+
 .greetings p,
 .mission p,
 .infoProduct p {
