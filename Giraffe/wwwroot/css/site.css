@@ -48,26 +48,32 @@ body {
 
 .header-section-main {
     background-image: url('/img/backgroundMain.png');
+    background-size: cover;
 }
 
 .header-section-about {
     background-image: url('/img/backgroundAbout.png');
+    background-size: cover;
 }
 
 .header-section-silk {
     background-image: url('/img/backgroundSilk.png');
+    background-size: cover;
 }
 
 .header-section-dtf {
     background-image: url('/img/backgroundDtf.png');
+    background-size: cover;
 }
 
 .header-section-plotterCutting {
     background-image: url('/img/backgroundPlotter.png');
+    background-size: cover;
 }
 
 .header-section-puff {
     background-image: url('/img/backgroundPlotter.png');
+    background-size: cover;
 }
 
 .header-section-contact {
