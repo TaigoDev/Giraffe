@@ -410,13 +410,6 @@ h2 {
 }
 
 
-
-
-
-
-
-
-/* Стили для модального окна */
 .modal {
     display: none; 
     position: fixed; 
@@ -434,6 +427,7 @@ h2 {
     display: block;
     width: 80%;
     max-width: 700px;
+    margin-top: 20%;
 }
 
 .modal-nav {
@@ -713,7 +707,6 @@ h2 {
     background-color: #1c1c1c;
     height: 132px;
     border-radius: 30px;
-    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -726,13 +719,20 @@ h2 {
 .acc-content {
     max-height: 0;
     margin: 0 2rem;
-    color: #000;
+    color: #fff;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
     letter-spacing: -0.01em;
+}
+
+.goDown {
+    background-color: #1c1c1c;
+    border-radius: 30px;
+    /* padding-bottom: 20px; */
+    margin-bottom: 30px;
 }
 
 .backgroundFaq {
