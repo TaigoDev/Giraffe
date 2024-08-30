@@ -463,13 +463,6 @@ h2 {
     color: #bbb;
 }
 
-
-
-
-
-
-
-
 .cooperation {
     margin-bottom: 150px;
     margin-top: 120px;
@@ -1407,5 +1400,9 @@ h2 {
 
     .footer-text .navbar-brand {
         margin: 0;
+    }
+
+    .modal-content {
+        margin-top: 150px;
     }
 }
