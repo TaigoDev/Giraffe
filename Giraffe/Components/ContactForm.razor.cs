@@ -11,7 +11,7 @@ public partial class ContactForm : ComponentBase
 
     private string? Message { get; set; } 
     private string? Class { get; set; }
-    
+    private bool HideForm { get; set; } 
 
     private async Task OnSubmit()
     {
@@ -32,15 +32,18 @@ public partial class ContactForm : ComponentBase
             "Новое уведомление с сайта"
             );
         Message = "Заявка успешно отправлена";
+        HideForm = true;
         await OnCancel();
     }
 
     private async Task OnCancel()
     {
+        StateHasChanged();
         await Task.Delay(3000);
         Class = "exit";
         StateHasChanged();
         await Task.Delay(1000);
+        HideForm = false;
         Message = null;
         Class = null;
     }
