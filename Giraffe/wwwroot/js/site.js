@@ -1,17 +1,17 @@
-﻿const btns = document.querySelectorAll(".acc-btn-docs, .acc-btn");
+﻿// Получаем все кнопки и блоки FAQ
+const buttons = document.querySelectorAll('.acc-btn');
+const faqBlocks = document.querySelectorAll('.faqOne, .faqTwo, .faqThree, .faqFour');
 
-// fn
-function accordion() {
-    // this = the btn | icon & bg changed
-    this.classList.toggle("is-open");
+// Добавляем обработчики событий для каждой кнопки
+buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        // Скрываем все FAQ блоки
+        faqBlocks.forEach(block => block.style.display = 'none');
 
-    // the acc-content
-    const content = this.nextElementSibling;
-
-    // IF open, close | else open
-    if (content.style.maxHeight) content.style.maxHeight = null;
-    else content.style.maxHeight = content.scrollHeight + "px";
-}
+        // Показываем соответствующий блок по индексу кнопки
+        faqBlocks[index].style.display = 'block';
+    });
+});
 
 btns.forEach((el) => el.addEventListener("click", accordion));
 

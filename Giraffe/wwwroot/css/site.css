@@ -657,7 +657,7 @@ h2 {
     background-color: #1c1c1c;
     border-radius: 31px;
     width: 550px;
-    height: 450px;
+    height: 587px;
     padding-top: 130px;
     padding-bottom: 85px;
     padding-left: 70px;
@@ -676,14 +676,14 @@ h2 {
 
 .faqQuestion h3 {
     font-weight: 600;
-    font-size: 30px;
+    font-size: 34px;
     color: #fff;
     margin-bottom: 40px;
 }
 
 .faqQuestionP {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 24px;
     color: #a6a6a6;
     width: 370px;
 }
@@ -710,29 +710,15 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .acc-btn:after {
     content: url('/img/plus.png');
 }
 
-.acc-content {
-    max-height: 0;
-    margin: 0 2rem;
-    color: #fff;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: -0.01em;
-}
-
-.goDown {
-    background-color: #1c1c1c;
-    border-radius: 30px;
-    /* padding-bottom: 20px; */
-    margin-bottom: 30px;
+.faqTwo, .faqThree, .faqFour {
+    display: none;
 }
 
 .backgroundFaq {
