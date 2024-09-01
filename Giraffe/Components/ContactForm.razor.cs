@@ -22,15 +22,17 @@ public partial class ContactForm : ComponentBase
             return;
         }
 
-        await MailService.NewMail(
-            $"""
-            <p> Пользователь сайта оставил новую заявку: </p>
-            <p> Имя: {FirstName} </p>
-            <p> Телефон: {Telephone} </p>
-            <p> Почта: {Email} </p>
-            """,
-            "Новое уведомление с сайта"
-            );
+        new Task(async () => { 
+            await MailService.NewMail(
+                $"""
+                <p> Пользователь сайта оставил новую заявку: </p>
+                <p> Имя: {FirstName} </p>
+                <p> Телефон: {Telephone} </p>
+                <p> Почта: {Email} </p>
+                """,
+                "Новое уведомление с сайта"
+                );
+        }).Start();
         Message = "Заявка успешно отправлена";
         HideForm = true;
         await OnCancel();
