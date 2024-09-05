@@ -44,6 +44,7 @@ body {
     background: none;
     height: 505px;
     margin-bottom: 100px;
+    width: 100%;
 }
 
 .header-section-main {
@@ -1066,7 +1067,7 @@ h2 {
 
 
 @media (max-width: 992px) {
-
+    
     .header-left {
         width: 20%;
     }
@@ -1091,7 +1092,7 @@ h2 {
     }
 
     .separation {
-        width: 385px;
+        /*width: 375px;*/
         font-size: 13px;
     }
 
@@ -1100,7 +1101,7 @@ h2 {
     }
 
     .greetings h2 {
-        width: 400px;
+        width: 100%;
     }
 
     .greetings p,
@@ -1122,7 +1123,7 @@ h2 {
     .trust3 p,
     .trust4 p {
         font-size: 17px;
-        width: 400px;
+        width: 100%;
     }
 
     .servicesСard1,
@@ -1131,7 +1132,7 @@ h2 {
     .servicesСard4 {
         position: relative;
         border-radius: 26px;
-        width: 390px;
+        width: 365px;
         height: 335px;
         background-size: cover;
         background-position: center;
@@ -1218,7 +1219,7 @@ h2 {
 
     .profile-card-big {
         position: relative;
-        width: 400px;
+        width: 100%;
     }
 
     .profile-card-big img.background {
