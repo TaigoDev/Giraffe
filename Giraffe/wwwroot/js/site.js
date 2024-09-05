@@ -1,19 +1,14 @@
-﻿// Получаем все кнопки и блоки FAQ
-const buttons = document.querySelectorAll('.acc-btn');
+﻿const buttons = document.querySelectorAll('.acc-btn');
 const faqBlocks = document.querySelectorAll('.faqOne, .faqTwo, .faqThree, .faqFour');
-
-// Добавляем обработчики событий для каждой кнопки
 buttons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        // Скрываем все FAQ блоки
         faqBlocks.forEach(block => block.style.display = 'none');
 
-        // Показываем соответствующий блок по индексу кнопки
         faqBlocks[index].style.display = 'block';
     });
 });
 
-btns.forEach((el) => el.addEventListener("click", accordion));
+// btns.forEach((el) => el.addEventListener("click", accordion));
 
 document.addEventListener('DOMContentLoaded', function () {
 
