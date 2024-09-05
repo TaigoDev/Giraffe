@@ -1092,7 +1092,7 @@ h2 {
     }
 
     .separation {
-        /*width: 375px;*/
+        width: 98%;
         font-size: 13px;
     }
 
@@ -1122,7 +1122,7 @@ h2 {
     .trust2 p,
     .trust3 p,
     .trust4 p {
-        font-size: 17px;
+        font-size: 15px;
         width: 100%;
     }
 
@@ -1132,7 +1132,7 @@ h2 {
     .servicesСard4 {
         position: relative;
         border-radius: 26px;
-        width: 365px;
+        width: 97%;
         height: 335px;
         background-size: cover;
         background-position: center;
@@ -1234,7 +1234,7 @@ h2 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 350px;
+        width: 98%;
         margin-bottom: 20px;
     }
 
@@ -1255,7 +1255,7 @@ h2 {
         color: #fff;
         margin-top: 40px;
         margin-bottom: 40px;
-        width: 100%;
+        width: 97%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1265,11 +1265,11 @@ h2 {
         position: relative;
         background-color: #1c1c1c;
         border-radius: 31px;
-        width: 365px;
+        width: 99%;
         height: 350px;
         padding-top: 90px;
         padding-bottom: 85px;
-        padding-left: 70px;
+        padding-left: 20px;
         padding-right: 70px;
         margin-bottom: 20px;
     }
@@ -1286,7 +1286,7 @@ h2 {
 
     .faqQuestion h3 {
         font-weight: 600;
-        font-size: 20px;
+        font-size: 16px;
         color: #fff;
         margin-bottom: 40px;
     }
@@ -1299,7 +1299,7 @@ h2 {
     }
 
     .acc-container {
-        width: 365px;
+        width: 97%;
     }
 
     .acc-btn {
