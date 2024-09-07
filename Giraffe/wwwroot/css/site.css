@@ -1044,7 +1044,7 @@ h2 {
 }
 
 .hover-svg:hover svg path {
-    stroke: #B4F115; /* Changes stroke color on hover */
+    stroke: #B4F115; 
 }
 
 @keyframes exit {
@@ -1317,14 +1317,13 @@ h2 {
     .bidForm-puff,
     .bidForm-dtf {
         background-repeat: no-repeat;
-        width: 350px;
+        width: 98%;
         border-radius: 31px;
         height: 326px;
-        overflow: hidden;
-        padding: 50px 100px 70px 40px;
+        padding: 50px 20px 70px 40px;
         margin-top: 30px;
         margin-bottom: 100px;
-        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     .bidForm h3,
@@ -1335,7 +1334,7 @@ h2 {
         font-weight: 600;
         font-size: 25px;
         color: #fff;
-        width: 335px;
+        width: 90%;
     }
 
     .bidForm p,
