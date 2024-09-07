@@ -92,3 +92,97 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Инициализация слайдера
+    const sliderSlides = document.querySelectorAll('.slider-slide');
+    const paginationContainer = document.querySelector('.pagination');
+    const leftButton = document.getElementById('left');
+    const rightButton = document.getElementById('right');
+    let currentIndex = 0; // Текущий индекс слайда
+
+    function updateSlider() {
+        sliderSlides.forEach((slide, index) => {
+            slide.classList.toggle('active', index === currentIndex);
+        });
+        updatePagination();
+        updateArrows();
+    }
+
+    function updateArrows() {
+        leftButton.classList.toggle('disabled', currentIndex === 0);
+        rightButton.classList.toggle('disabled', currentIndex === sliderSlides.length - 1);
+    }
+
+    function createPagination() {
+        paginationContainer.innerHTML = '';
+        sliderSlides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (index === currentIndex) dot.classList.add('active');
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateSlider();
+            });
+            paginationContainer.appendChild(dot);
+        });
+        updatePagination();
+    }
+
+    function updatePagination() {
+        const dots = paginationContainer.querySelectorAll('.dot');
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+    }
+
+    leftButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+        }
+    });
+
+    rightButton.addEventListener('click', () => {
+        if (currentIndex < sliderSlides.length - 1) {
+            currentIndex++;
+            updateSlider();
+        }
+    });
+
+    // Инициализация
+    createPagination();
+    updateSlider();
+});

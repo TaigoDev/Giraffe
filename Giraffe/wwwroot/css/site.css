@@ -340,40 +340,92 @@ h2 {
     position: relative;
     margin-top: 120px;
     margin-bottom: 120px;
+    overflow: hidden; 
+}
+
+.cad-img-small {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.cad-img-small img {
+    height: 100px; /* Задаем одинаковую высоту */
+    object-fit: contain;
+    flex: 0 0 50%; /* Убираем возможность растягиваться */
+    margin-right: 14px;
 }
 
 .buttons-slider {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
-.slder-cad-small .cad-img-small {
-    white-space: nowrap;
-    font-size: 0px;
-    overflow: hidden;
-    scroll-behavior: smooth;
-}
-
-.cad-img-small.dragging {
-    cursor: grab;
-    scroll-behavior: auto;
-}
-
-.cad-img-small.dragging img {
+.disabled {
+    opacity: 0.5;
     pointer-events: none;
 }
-
-.cad-img-small img {
-    height: 100px;
-    width: auto;
-    margin-left: 14px;
-    max-width: calc(100% / 2);
-    border-radius: 15px;
-}
-
 .cad-img-small img:first-child {
     margin-left: 0px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.pagination .dot.active {
+    background-color: #333;
+}
+
+.buttons-slider svg.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
 }
 
 .slder-cad .cad-img {
@@ -1067,9 +1119,6 @@ h2 {
     }
 }
 
-
-
-
 @media (max-width: 992px) {
     
     .header-left {
@@ -1184,7 +1233,9 @@ h2 {
 
     .cad-img-small img {
         width: 100%;
-        height: auto;
+        position: relative;
+        overflow: hidden;
+        flex: 0 0 100%;
     }
 
     .cad-img img {
