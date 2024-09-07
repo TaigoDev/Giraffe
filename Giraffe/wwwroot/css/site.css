@@ -1043,6 +1043,10 @@ h2 {
     animation: exit 1s ease 0s 1 normal forwards;
 }
 
+.hover-svg:hover svg path {
+    stroke: #B4F115; /* Changes stroke color on hover */
+}
+
 @keyframes exit {
     0% {
         opacity: 1;
@@ -1320,6 +1324,7 @@ h2 {
         padding: 50px 100px 70px 40px;
         margin-top: 30px;
         margin-bottom: 100px;
+        -webkit-box-sizing: border-box;
     }
 
     .bidForm h3,
