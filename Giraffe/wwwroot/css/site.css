@@ -448,9 +448,8 @@ h2 {
 .cad-img img {
     height: 350px;
     object-fit: cover;
-    margin-left: 14px;
+    padding-left: 5px;
     width: calc(100% / 3);
-    border-radius: 15px;
     filter: grayscale(100%);
 }
 

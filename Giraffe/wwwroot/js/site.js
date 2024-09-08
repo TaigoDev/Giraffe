@@ -10,112 +10,6 @@ buttons.forEach((button, index) => {
 
 // btns.forEach((el) => el.addEventListener("click", accordion));
 
-document.addEventListener('DOMContentLoaded', function () {
-
-    const slider1Slides = document.querySelectorAll('.slider-slide'); 
-    let slider1Index = 0;
-
-    document.querySelectorAll('.slider-buttons .slider-button').forEach((button) => {
-        button.addEventListener('click', function () {
-            slider1Index = (button.id === 'left') ? 
-                (slider1Index > 0 ? slider1Index - 1 : slider1Slides.length - 1) : 
-                (slider1Index < slider1Slides.length - 1 ? slider1Index + 1 : 0);
-            updateSlider(slider1Slides, slider1Index);
-        });
-    });
-
-    function updateSlider(slides, index) {
-        slides.forEach((slide, i) => {
-            slide.classList.remove('active');
-            if (i === index) {
-                slide.classList.add('active');
-            }
-        });
-    }
-
-    updateSlider(slider1Slides, slider1Index);
-
-    const cadImgContainer = document.querySelector('.slder-cad .cad-img');
-    const cadButtons = document.querySelectorAll('.slder-cad .buttons-slider img'); 
-
-    cadButtons.forEach((button) => {
-        button.addEventListener('click', () => {
-            const scrollAmount = cadImgContainer.clientWidth; 
-            cadImgContainer.scrollLeft += (button.id === 'left') ? -scrollAmount : scrollAmount;
-        });
-    });
-
-    const cadSmallImgContainer = document.querySelector('.slder-cad-small .cad-img-small'); 
-    const cadSmallButtons = document.querySelectorAll('.slder-cad-small .buttons-slider img'); 
-
-    cadSmallButtons.forEach((button) => {
-        button.addEventListener('click', () => {
-            const scrollAmount = cadSmallImgContainer.clientWidth; 
-            cadSmallImgContainer.scrollLeft += (button.id === 'left') ? -scrollAmount : scrollAmount;
-        });
-    });
-
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImage');
-    const images = document.querySelectorAll('.cad-img img, .cad-img-small img, .slider-slide img'); 
-    const closeModal = document.querySelector('.close');
-    const prev = document.querySelector('.prev');
-    const next = document.querySelector('.next');
-    let modalIndex = 0;
-
-    images.forEach((img, index) => {
-        img.addEventListener('click', () => {
-            modal.style.display = 'block';
-            modalImg.src = img.src;
-            modalIndex = index;
-        });
-    });
-
-    closeModal.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
-
-    prev.addEventListener('click', () => {
-        modalIndex = (modalIndex > 0) ? modalIndex - 1 : images.length - 1;
-        modalImg.src = images[modalIndex].src;
-    });
-
-    next.addEventListener('click', () => {
-        modalIndex = (modalIndex < images.length - 1) ? modalIndex + 1 : 0;
-        modalImg.src = images[modalIndex].src;
-    });
-
-
-    window.addEventListener('click', (event) => {
-        if (event.target == modal) {
-            modal.style.display = 'none';
-        }
-    });
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -185,4 +79,233 @@ document.addEventListener('DOMContentLoaded', function () {
     // Инициализация
     createPagination();
     updateSlider();
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.getElementById('slider1');
+    const cadSmallImgContainer = slider.querySelector('.cad-img-small');
+    const images = cadSmallImgContainer.querySelectorAll('img');
+    const leftButton = slider.querySelector('#left');
+    const rightButton = slider.querySelector('#right');
+    const paginationContainer = slider.querySelector('.pagination');
+
+    let currentIndex = 0;
+    let imagesPerSlide = 2;
+    const totalImages = images.length;
+    let totalPages = Math.ceil(totalImages / imagesPerSlide);
+
+    // Обновление количества изображений на слайде в зависимости от размера окна
+    function updateImagesPerSlide() {
+        imagesPerSlide = window.innerWidth <= 768 ? 1 : 2;
+        totalPages = Math.ceil(totalImages / imagesPerSlide);
+        updateSlider();
+        createPagination();
+    }
+
+    // Обновление слайдера при изменении текущего индекса
+    function updateSlider() {
+        const scrollAmount = currentIndex * (images[0].offsetWidth + 14);
+        cadSmallImgContainer.style.transform = `translateX(-${scrollAmount}px)`;
+        updateArrows();
+        updatePagination();
+    }
+
+    // Обновление состояния стрелок
+    function updateArrows() {
+        leftButton.classList.toggle('disabled', currentIndex === 0);
+        rightButton.classList.toggle('disabled', currentIndex >= totalImages - imagesPerSlide);
+    }
+
+    // Создание точек пагинации
+    function createPagination() {
+        paginationContainer.innerHTML = '';
+        for (let i = 0; i < totalPages; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (i === Math.floor(currentIndex / imagesPerSlide)) dot.classList.add('active');
+            dot.addEventListener('click', () => {
+                currentIndex = i * imagesPerSlide;
+                updateSlider();
+            });
+            paginationContainer.appendChild(dot);
+        }
+    }
+
+    // Обновление состояния точек пагинации
+    function updatePagination() {
+        const dots = paginationContainer.querySelectorAll('.dot');
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === Math.floor(currentIndex / imagesPerSlide));
+        });
+    }
+
+    // Добавление обработчиков событий на кнопки
+    leftButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex -= imagesPerSlide;
+            currentIndex = Math.max(0, currentIndex);
+            updateSlider();
+        }
+    });
+
+    rightButton.addEventListener('click', () => {
+        if (currentIndex < totalImages - imagesPerSlide) {
+            currentIndex += imagesPerSlide;
+            currentIndex = Math.min(totalImages - imagesPerSlide, currentIndex);
+            updateSlider();
+        }
+    });
+
+    // Инициализация слайдера
+    updateImagesPerSlide();
+    window.addEventListener('resize', updateImagesPerSlide);
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('.slder-cad');
+    const cadImgContainer = slider.querySelector('.cad-img');
+    const images = cadImgContainer.querySelectorAll('img');
+    const leftButton = slider.querySelector('#left');
+    const rightButton = slider.querySelector('#right');
+    const paginationContainer = slider.querySelector('.pagination');
+
+    let currentIndex = 0;
+    let imagesPerSlide = calculateImagesPerSlide(); // Динамическое вычисление изображений на слайд
+    const totalImages = images.length;
+    let totalPages = Math.ceil(totalImages / imagesPerSlide);
+
+    // Пересчет количества изображений при изменении размера окна
+    function calculateImagesPerSlide() {
+        if (window.innerWidth <= 480) return 1;
+        if (window.innerWidth <= 768) return 2;
+        return 3;
+    }
+
+    // Обновление количества изображений на слайд и пагинации при изменении размера окна
+    function handleResize() {
+        imagesPerSlide = calculateImagesPerSlide();
+        totalPages = Math.ceil(totalImages / imagesPerSlide);
+        updateSlider();
+        createPagination();
+    }
+
+    // Обновление слайдера при изменении текущего индекса
+    function updateSlider() {
+        const scrollAmount = currentIndex * cadImgContainer.clientWidth;
+        cadImgContainer.scrollTo({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+        updateArrows();
+        updatePagination();
+    }
+
+    // Обновление состояния стрелок
+    function updateArrows() {
+        leftButton.classList.toggle('disabled', currentIndex === 0);
+        rightButton.classList.toggle('disabled', currentIndex >= totalPages - 1);
+    }
+
+    // Создание точек пагинации
+    function createPagination() {
+        paginationContainer.innerHTML = '';
+        for (let i = 0; i < totalPages; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (i === currentIndex) dot.classList.add('active');
+            dot.addEventListener('click', () => {
+                currentIndex = i;
+                updateSlider();
+            });
+            paginationContainer.appendChild(dot);
+        }
+    }
+
+    // Обновление состояния точек пагинации
+    function updatePagination() {
+        const dots = paginationContainer.querySelectorAll('.dot');
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === currentIndex);
+        });
+    }
+
+    // Добавление обработчиков событий на кнопки
+    leftButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex -= 1;
+            updateSlider();
+        }
+    });
+
+    rightButton.addEventListener('click', () => {
+        if (currentIndex < totalPages - 1) {
+            currentIndex += 1;
+            updateSlider();
+        }
+    });
+
+    // Инициализация слайдера
+    createPagination();
+    updateSlider();
+
+    // Событие для пересчета при изменении размера окна
+    window.addEventListener('resize', handleResize);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const closeModal = document.querySelector('.modal .close');
+    const prevButton = document.querySelector('.modal .prev');
+    const nextButton = document.querySelector('.modal .next');
+    const images = document.querySelectorAll('.cad-img img, .slider-slide img'); // Коллекция изображений
+    let currentIndex = 0;
+
+    // Функция для открытия модалки с выбранным изображением
+    function openModal(index) {
+        currentIndex = index;
+        modalImage.src = images[currentIndex].src;
+        modal.style.display = 'block';
+    }
+
+    // Обработчик клика по изображению
+    images.forEach((image, index) => {
+        image.addEventListener('click', () => openModal(index));
+    });
+
+    // Закрытие модалки
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Обработчик кнопки "Назад"
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+        modalImage.src = images[currentIndex].src;
+    });
+
+    // Обработчик кнопки "Вперед"
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+        modalImage.src = images[currentIndex].src;
+    });
+
+    // Закрытие модалки при клике вне изображения
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
 });
