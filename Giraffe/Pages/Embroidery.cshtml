@@ -1,9 +1,9 @@
-﻿@page
-@model Giraffe.Pages.PlotterCuttingModel
+@page
+@model Giraffe.Pages.Embroidery
 @{
-    ViewData["Title"] = "Плоттерная резка";
+    ViewData["Title"] = "Вышивка";
 }
-<header class="header-section-plotterCutting">
+<header class="header-section-embroidery">
     <div class="container-fluid container">
         <div class="d-flex justify-content-between align-items-center pt-5">
             <div class="header-left">
@@ -25,6 +25,7 @@
                             <li><a class="dropdown-item" href="/dtf">ДТФ</a></li>
                             <li><a class="dropdown-item" href="/PlotterCutting">Плоттерная резка</a></li>
                             <li><a class="dropdown-item" href="/Puff-Print">Puff-Print</a></li>
+                            <li><a class="dropdown-item" href="/Embroidery">Вышивка</a></li>
                         </ul>
                     </div>
                     <a class="nav-link text-white" href="/Contacts">Контакты</a>
@@ -34,7 +35,7 @@
         </div>
     </div>
     <div class="text-center">
-        <h1 class="text-center heading">Плоттерная резка</h1>
+        <h1 class="text-center heading">Вышивка</h1>
     </div>
 </header>
 <main>
@@ -44,47 +45,42 @@
             <p>GIRAFFE</p>
         </div>
         <div class="infoProduct" style="margin-bottom: 0;">
-            <h2>Что такое плоттерная резка?</h2>
-            <p>это технология которая позволяет с высокой точностью вырезать векторные изображения на пленке с подложкой
-                любого нужного вам формата. Плоттерный станок нарезает острыми ножами текст либо рисунок любой
-                сложности!</p>
+            <h2>Что такое вышивка?</h2>
+            <p>Искусство создания изображений и узоров на ткани с помощью иглы и ниток. Она позволяет придать индивидуальность предметам гардероба, украсить интерьер или создать уникальные произведения искусства.</p>
         </div>
         <div class="separation">
             <p>НАШИ РАБОТЫ</p>
             <p>GIRAFFE</p>
         </div>
-        <div class="slider-container">
-            <div class="slider-slide active">
-                <div class="slider-row">
-                    <div class="slider-large">
-                        <img src="/img/plotter/1.jpg" alt="Large Image 1">
-                    </div>
-                    <div class="slider-small">
-                        <img src="/img/plotter/2.jpg" alt="Small Image 1">
-                    </div>
-                </div>
-                <div class="slider-row">
-                    <div class="slider-small">
-                        <img src="/img/plotter/4.jpg" alt="Small Image 2">
-                    </div>
-                    <div class="slider-large">
-                        <img src="/img/plotter/3.jpg" alt="Large Image 2">
-                    </div>
-                </div>
+        <div class="slder-cad">
+            <div class="cad-img">
+                <img src="/img/silkscreen/1.jpg" alt="Image 1" draggable="false">
+                <img src="/img/silkscreen/2.jpg" alt="Image 2" draggable="false">
+                <img src="/img/silkscreen/3.jpg" alt="Image 3" draggable="false">
+                <img src="/img/silkscreen/4.jpg" alt="Image 4" draggable="false">
+                <img src="/img/silkscreen/5.jpg" alt="Image 5" draggable="false">
+                <img src="/img/silkscreen/6.jpg" alt="Image 6" draggable="false">
+                <img src="/img/silkscreen/7.jpg" alt="Image 7" draggable="false">
+                <img src="/img/silkscreen/8.jpg" alt="Image 8" draggable="false">
+                <img src="/img/silkscreen/9.jpg" alt="Image 9" draggable="false">
+                <img src="/img/silkscreen/10.jpg" alt="Image 10" draggable="false">
+                <img src="/img/silkscreen/11.jpg" alt="Image 11" draggable="false">
+                <img src="/img/silkscreen/12.jpg" alt="Image 12" draggable="false">
+                <img src="/img/silkscreen/13.jpg" alt="Image 13" draggable="false">
+                <img src="/img/silkscreen/14.jpeg" alt="Image 14" draggable="false">
+                <img src="/img/silkscreen/15.jpeg" alt="Image 15" draggable="false">
             </div>
-            <div class="slider-slide">
-                    <div class="slider-large">
-                        <img src="/img/plotter/5.jpg" alt="Large Image 2">
-                    </div>
-                </div>
-            </div>
-            <div class="slider-buttons">
-                <img src="/img/arrowLeftBlack.png" alt="Previous" id="left" class="slider-button">
-                <img src="/img/arrowRightBlack.png" alt="Next" id="right" class="slider-button">
+            <div class="buttons-slider">
+                <img src="/img/arrowLeftBlack.png" alt="Previous" id="left">
+                <img src="/img/arrowRightBlack.png" alt="Next" id="right">
             </div>
         </div>
+        <div class="separation">
+            <p>ЗАЯВКА</p>
+            <p>GIRAFFE</p>
+        </div>
         <div class="bidLink">
-            <div class="bidForm-plotter">
+            <div class="bidForm-silk">
                 <h3>Хотите заказать у нас услугу?</h3>
                 <div class="bidText">
                     <p>Заполните форму и мы с Вами свяжемся!</p>
@@ -92,7 +88,9 @@
                 </div>
             </div>
         </div>
+    </div>
 </main>
+<!-- Модальное окно для просмотра изображений -->
 <div id="imageModal" class="modal">
     <span class="close">&times;</span>
     <img class="modal-content" id="modalImage">

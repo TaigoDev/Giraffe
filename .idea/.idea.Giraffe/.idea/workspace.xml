@@ -8,9 +8,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc0082e0-1f96-499b-b37c-0abea6e3cd4c" name="Changes" comment="fix plotter">
+    <list default="true" id="dc0082e0-1f96-499b-b37c-0abea6e3cd4c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Giraffe/Pages/Embroidery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Giraffe/Pages/Embroidery.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Giraffe/Giraffe.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Giraffe.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Contacts.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Contacts.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe/Pages/PlotterCutting.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/PlotterCutting.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Puff-Print.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Puff-Print.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/SilkscreenPrinting.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/SilkscreenPrinting.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/about.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/about.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/dtf.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/dtf.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Giraffe/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,13 +39,18 @@
     &quot;assignee&quot;: &quot;f0rsy&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/TaigoDev/Giraffe.git",
-    "accountId": "1c2cdf54-502a-4151-931f-d050d383660e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/TaigoDev/Giraffe.git&quot;,
+    &quot;accountId&quot;: &quot;c62e41e3-670d-4980-84d9-a7956a89ab7f&quot;
   }
-}]]></component>
-  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://diff.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -43,32 +58,50 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2kyexP8qGRpHfdE2Rpg9hZRJMhB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Giraffe: IIS Express.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Giraffe: IIS Express.executor": "Run",
+    ".NET Launch Settings Profile.Unnamed.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.language",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;Blazor&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Blazor"
     ]
   }
-}</component>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="LaunchSettings" factoryName=".NET Launch Settings Profile" nameIsGenerated="true">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Giraffe/Giraffe.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -78,32 +111,16 @@
       <option name="presentableId" value="Default" />
       <updated>1724260490913</updated>
       <workItem from="1724260492695" duration="4186000" />
-      <workItem from="1725080360399" duration="5870000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="last fix" />
-    <MESSAGE value="fix plotter" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix plotter" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

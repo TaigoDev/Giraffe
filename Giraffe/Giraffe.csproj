@@ -25,5 +25,10 @@
       <HintPath>TAIGO.ID.Environment-8.0.6.0.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\Embroidery.cs">
+      <DependentUpon>Embroidery.cshtml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 
 </Project>
