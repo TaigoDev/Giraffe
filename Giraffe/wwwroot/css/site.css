@@ -259,7 +259,8 @@ h2 {
 .servicesСard1,
 .servicesСard2,
 .servicesСard3,
-.servicesСard4 {
+.servicesСard4,
+.servicesСard5 {
     position: relative;
     border-radius: 26px;
     width: 854px;
@@ -285,6 +286,10 @@ h2 {
 
 .servicesСard4 {
     background-image: url('/img/puffCard.png');
+}
+
+.servicesСard5 {
+    background-image: url('/img/embroidery.png');
 }
 
 .overlay {
@@ -631,7 +636,7 @@ h2 {
     object-fit: cover;
 }
 
-.info {
+.info, .info-small {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -644,7 +649,7 @@ h2 {
     padding: 10px;
 }
 
-.info h2 {
+.info h2, .info-small h2 {
     margin: 0;
     font-size: 26px;
     color: #fff;
@@ -652,15 +657,18 @@ h2 {
     margin-bottom: 10px;
 }
 
-.info p {
+.info p, .info-small p {
     margin: 0;
     font-size: 16px;
     display: flex;
     align-items: center;
     line-height: 1.2;
+    color: #A9A9A9;
 }
 
-.info p::before {
+
+
+.info p::before, .info-small p::before {
     content: url('/img/userGray.png');
     margin-right: 10px;
     width: 16px;
@@ -1081,6 +1089,10 @@ h2 {
     margin: 0 10px;
 }
 
+#dtf {
+    display: none;
+}
+
 .message {
     display: flex;
     flex-direction: column;
@@ -1199,7 +1211,8 @@ h2 {
     .servicesСard1,
     .servicesСard2,
     .servicesСard3,
-    .servicesСard4 {
+    .servicesСard4,
+    .servicesСard5 {
         position: relative;
         border-radius: 26px;
         width: 97%;
@@ -1211,7 +1224,7 @@ h2 {
         margin-bottom: 8px;
     }
 
-    .servicesСard4 {
+    .servicesСard5 {
         margin-bottom: 45px;
     }
 
@@ -1230,14 +1243,21 @@ h2 {
         margin-right: 20px;
         font-size: 18px;
         font-weight: bold;
+        margin-bottom: 15px;
     }
 
     .text-container p {
         font-size: 8px;
         width: 211px;
+        height: 60px;
     }
 
     .icon-container {
+        width: 19px;
+        height: 19px;
+    }
+
+    .icon-container img {
         width: 19px;
         height: 19px;
     }
@@ -1248,7 +1268,7 @@ h2 {
     }
 
     .cards {
-        margin-bottom: 100px;
+        margin-bottom: 56px;
     }
 
     .cooperation {
@@ -1301,12 +1321,14 @@ h2 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 150px;
+        margin-bottom: 40px;
     }
 
     .profile-card-big {
         position: relative;
-        width: 100%;
+        width: 313px;
+        height: 131px;
+        border-radius: 12px;
     }
 
     .profile-card-big img.background {
@@ -1316,25 +1338,68 @@ h2 {
         width: 100%;
         height: 100%;
     }
+    
+    .info {
+        justify-content: flex-start;
+        bottom: 40px;
+    }
+
+    .info-small {
+        justify-content: flex-start;
+        bottom: -20px;
+        left: 0;
+    }
+
+    .info p {
+        font-size: 10px;
+    }
+
+    .info-small p {
+        font-size: 8px;
+    }
+
+    .info p::before, .info-small p::before {
+        display: none;
+    }
+
+    .info h2 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .info-small h2 {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .profile-card {
+        width: 101px;
+        height: 140px;
+        border-radius: 12px;
+        margin-right: 0;
+        margin-left: 5px;
+        margin-bottom: 8px;
+    }
 
     .numbers {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         width: 98%;
+        text-align: center;
         margin-bottom: 20px;
+        flex-direction: column;
     }
 
     .numbers h3 {
-        font-weight: 500;
-        font-size: 20px;
+        font-weight: 800;
+        font-size: 16px;
         color: #3f3f3f;
     }
 
     .numbers p {
-        width: 300px;
+        width: 243px;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 12px;
         color: #565656;
     }
 
@@ -1462,7 +1527,8 @@ h2 {
 
     .slider-large,
     .slider-small {
-        width: 90%;
+        width: 313px;
+        height: 145px;
         margin-bottom: 10px;
     }
 
@@ -1486,6 +1552,14 @@ h2 {
 
     .modal-content {
         margin-top: 150px;
+    }
+
+    .slider-container {
+        display: none;
+    }
+    
+    #dtf {
+        display: block;
     }
 }
 
