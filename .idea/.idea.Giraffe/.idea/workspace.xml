@@ -8,13 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc0082e0-1f96-499b-b37c-0abea6e3cd4c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Giraffe/Pages/Embroidery.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Giraffe/Pages/Embroidery.cshtml" afterDir="false" />
+    <list default="true" id="dc0082e0-1f96-499b-b37c-0abea6e3cd4c" name="Changes" comment="fixes sliders">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Giraffe.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Giraffe.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Contacts.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Contacts.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Embroidery.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Embroidery.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe/Pages/PlotterCutting.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/PlotterCutting.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Puff-Print.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Puff-Print.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe/Pages/SilkscreenPrinting.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/SilkscreenPrinting.cshtml" afterDir="false" />
@@ -28,7 +24,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DpaMonitoringSettings">
-    <option name="autoShow" value="false" />
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,49 +38,49 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/TaigoDev/Giraffe.git&quot;,
-    &quot;accountId&quot;: &quot;c62e41e3-670d-4980-84d9-a7956a89ab7f&quot;
+    &quot;accountId&quot;: &quot;e36a98f7-1623-4702-9116-e73da518aceb&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://diff.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Giraffe/Pages/Embroidery.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2kyexP8qGRpHfdE2Rpg9hZRJMhB" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Giraffe: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.Unnamed.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.language",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Giraffe: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;SolutionBuilderGeneralOptionsPage&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Blazor"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Blazor&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Unnamed" type="LaunchSettings" factoryName=".NET Launch Settings Profile" nameIsGenerated="true">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Giraffe/Giraffe.csproj" />
@@ -111,16 +107,43 @@
       <option name="presentableId" value="Default" />
       <updated>1724260490913</updated>
       <workItem from="1724260492695" duration="4186000" />
+      <workItem from="1738664277312" duration="425000" />
+      <workItem from="1738664822265" duration="1325000" />
+      <workItem from="1738666257323" duration="195000" />
+      <workItem from="1738666471387" duration="28000" />
+      <workItem from="1738666677882" duration="823000" />
+      <workItem from="1738667548744" duration="2994000" />
+      <workItem from="1738726765147" duration="35065000" />
     </task>
+    <task id="LOCAL-00001" summary="fix">
+      <option name="closed" value="true" />
+      <created>1738671422077</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738671422078</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixes sliders">
+      <option name="closed" value="true" />
+      <created>1738757950689</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738757950689</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
-    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="fix" />
+    <MESSAGE value="fixes sliders" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes sliders" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

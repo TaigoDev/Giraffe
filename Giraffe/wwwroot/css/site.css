@@ -1089,8 +1089,13 @@ h2 {
     margin: 0 10px;
 }
 
-#dtf {
+#PlotterCutting, #puff-print, #dtf {
     display: none;
+}
+
+#about {
+    display: block;
+    margin-top: 33px;
 }
 
 .message {
@@ -1136,10 +1141,6 @@ h2 {
     }
 }
 
-.slder-cad {
-    margin-bottom: 70px;
-}
-
 @media (max-width: 992px) {
     
     .header-left {
@@ -1171,7 +1172,17 @@ h2 {
     }
 
     h2 {
-        font-size: 25px;
+        font-size: 18px;
+        
+    }
+
+    .photos h2 {
+        margin-top: 33px;
+    }
+
+    .comand h2 {
+        margin-top: 35px;
+        margin-bottom: 35px;
     }
 
     .greetings h2 {
@@ -1285,8 +1296,19 @@ h2 {
 
     .cad-img img {
         width: 100%;
+        border-radius: 25px;
+        height: 203px;
     }
 
+    .slder-cad  {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .slder-cad {
+        
+    }
+    
     .inputs {
         display: flex;
         flex-direction: column;
@@ -1557,8 +1579,8 @@ h2 {
     .slider-container {
         display: none;
     }
-    
-    #dtf {
+
+    #PlotterCutting, #puff-print, #dtf {
         display: block;
     }
 }
