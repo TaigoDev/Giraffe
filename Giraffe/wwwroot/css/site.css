@@ -93,6 +93,55 @@ body {
     margin-right: 20px;
 }
 
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    padding: 10px;
+}
+
+.mobile-nav.active {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    justify-content: flex-start;
+    padding-top: 40px;
+}
+
+.navbar-brand {
+    margin-bottom: 40px;
+}
+
+.nav-link {
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-right: 0;
+    font-size: 16px;
+}
+
 .dropdown-menu {
     background-color: #343a40;
     border: none;
@@ -783,8 +832,18 @@ h2 {
     content: url('/img/plus.png');
 }
 
-.faqTwo, .faqThree, .faqFour {
-    display: none;
+.acc-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.acc-content.active {
+    max-height: 300px; /* Подберите значение, подходящее для вашего содержимого */
+}
+
+.acc-content p {
+    color: #1a1a1a;
 }
 
 .backgroundFaq {
@@ -1151,6 +1210,14 @@ h2 {
         width: 100px;
     }
 
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+    }
+
     .nav {
         justify-content: center;
         flex-direction: column;
@@ -1192,7 +1259,7 @@ h2 {
     .greetings p,
     .mission p,
     .infoProduct p {
-        margin: 50px 10px 50px 10px;
+        margin: 40px 0px 50px 0px;
         font-size: 17px;
     }
 
@@ -1295,18 +1362,18 @@ h2 {
     }
 
     .cad-img img {
-        width: 100%;
+        width: 99%;
         border-radius: 25px;
         height: 203px;
+    }
+
+    .greetings, .mission, .trustUs, .infoProduct {
+        margin-top: 40px;
     }
 
     .slder-cad  {
         margin-top: 30px;
         margin-bottom: 30px;
-    }
-
-    .slder-cad {
-        
     }
     
     .inputs {
@@ -1438,47 +1505,74 @@ h2 {
     .faqQuestion {
         position: relative;
         background-color: #1c1c1c;
-        border-radius: 31px;
-        width: 99%;
-        height: 350px;
-        padding-top: 90px;
-        padding-bottom: 85px;
-        padding-left: 20px;
-        padding-right: 70px;
+        border-radius: 16px;
+        width: 100%;
+        height: 206px;
+        padding-top: 33px;
+        padding-left: 28px;
         margin-bottom: 20px;
+        padding-bottom: 0px;
+        padding-right: 0px;
     }
 
     .faqLabel {
         position: absolute;
         top: -15px;
-        left: 0px;
-        font-weight: 500;
+        left: 230px;
+        font-weight: 700;
         font-size: 65px;
         color: #2a2a2a;
         margin: 0;
+        z-index: 0;
     }
 
     .faqQuestion h3 {
+        position: relative;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 15px;
         color: #fff;
-        margin-bottom: 40px;
+        margin-bottom: 23px;
+        z-index: 1;
+        width: 226px;
     }
 
     .faqQuestionP {
         font-weight: 400;
-        font-size: 15px;
+        font-size: 13px;
         color: #a6a6a6;
-        width: 250px;
+        width: 260px;
     }
 
     .acc-container {
         width: 97%;
     }
+    
+    .acc-content p {
+        padding-left: 10px;
+    }
 
     .acc-btn {
         margin-bottom: 20px;
-        font-size: 15px;
+        font-size: 12px;
+        height: 73px;
+        border-radius: 13px;
+    }
+
+    .acc-btn:after {
+        content: url(/img/plusSmall.png);
+    }
+
+    .slder-cad .cad-img {
+        margin-top: 0px;
+    }
+    
+    .pagination {
+        margin-top: 13px;
+    }
+
+    .pagination .dot {
+        width: 5px;
+        height: 5px;
     }
 
     .bidForm,
@@ -1525,21 +1619,21 @@ h2 {
     }
 
     .contact-info {
-        padding-top: 85px;
-        padding-bottom: 120px;
+        display: flex;
+        padding-top: 31px;
+        padding-bottom: 44px;
         padding-left: 45px;
         flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
     }
-
-    .adress-info {
-        padding-top: 60px;
-        padding-bottom: 120px;
-        padding-left: 45px;
-        flex: 1;
-    }
+    
 
     .adress-info p {
-        width: 250px;
+        width: 183px;
+        font-size: 11px;
+        padding-left: 87px;
+        margin-top: 38px;
     }
 
     .slider-row {
@@ -1582,6 +1676,22 @@ h2 {
 
     #PlotterCutting, #puff-print, #dtf {
         display: block;
+    }
+
+    .contacts {
+        background: url('/img/contactCardSmall.png') no-repeat center center;
+        border-radius: 31px;
+    }
+
+    .adress {
+        background: url('/img/backgroundAdressSmall.png') no-repeat center center;
+        border-radius: 31px;
+    }
+    
+    .adress-info {
+        padding-top: 34px;
+        padding-bottom: 0px;
+        padding-left: 45px;
     }
 }
 

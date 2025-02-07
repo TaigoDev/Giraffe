@@ -1,10 +1,21 @@
 ﻿const buttons = document.querySelectorAll('.acc-btn');
-const faqBlocks = document.querySelectorAll('.faqOne, .faqTwo, .faqThree, .faqFour');
+const faqBlocks = document.querySelectorAll('.acc-content');
+
 buttons.forEach((button, index) => {
     button.addEventListener('click', () => {
-        faqBlocks.forEach(block => block.style.display = 'none');
+        const content = faqBlocks[index];
 
-        faqBlocks[index].style.display = 'block';
+        // Если блок уже открыт – закрываем его
+        if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+            content.style.maxHeight = "0px";
+        } else {
+            // Закрываем все блоки
+            faqBlocks.forEach(block => {
+                block.style.maxHeight = "0px";
+            });
+            // Открываем текущий блок, устанавливая его высоту по содержимому
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
     });
 });
 
@@ -16,12 +27,11 @@ buttons.forEach((button, index) => {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Получаем все слайдеры по классу
+  
     const sliders = document.querySelectorAll('.slder-cad');
 
-    // Функция инициализации одного слайдера
+
     function initSlider(slider) {
-        // Находим элементы внутри данного слайдера
         const cadImgContainer = slider.querySelector('.cad-img');
         const images = cadImgContainer.querySelectorAll('img');
         const leftButton = slider.querySelector('.buttons-slider .left');
@@ -33,13 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const totalImages = images.length;
         let totalPages = Math.ceil(totalImages / imagesPerSlide);
 
-        // Функция для вычисления количества изображений на слайд
         function calculateImagesPerSlide() {
             if (window.innerWidth <= 992) return 1;
             return 3;
         }
 
-        // Обновление слайдера при изменении индекса
         function updateSlider() {
             const scrollAmount = currentIndex * cadImgContainer.clientWidth;
             cadImgContainer.scrollTo({
@@ -50,13 +58,11 @@ document.addEventListener('DOMContentLoaded', function () {
             updatePagination();
         }
 
-        // Обновление состояния стрелок
         function updateArrows() {
             leftButton.classList.toggle('disabled', currentIndex === 0);
             rightButton.classList.toggle('disabled', currentIndex >= totalPages - 1);
         }
 
-        // Создание пагинации
         function createPagination() {
             paginationContainer.innerHTML = '';
             for (let i = 0; i < totalPages; i++) {
@@ -70,16 +76,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 paginationContainer.appendChild(dot);
             }
         }
-
-        // Обновление пагинации
+        
         function updatePagination() {
             const dots = paginationContainer.querySelectorAll('.dot');
             dots.forEach((dot, index) => {
                 dot.classList.toggle('active', index === Math.floor(currentIndex));
             });
         }
-
-        // Обработчики для стрелок
+        
         leftButton.addEventListener('click', () => {
             if (currentIndex > 0) {
                 currentIndex--;
@@ -93,8 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 updateSlider();
             }
         });
-
-        // Обработка изменения размеров окна
+        
         window.addEventListener('resize', () => {
             imagesPerSlide = calculateImagesPerSlide();
             totalPages = Math.ceil(totalImages / imagesPerSlide);
@@ -102,26 +105,21 @@ document.addEventListener('DOMContentLoaded', function () {
             createPagination();
         });
 
-        // Назначаем обработчик клика по каждому изображению слайдера
         images.forEach((img, index) => {
             img.addEventListener('click', () => {
-                // Функция openModal будет определена глобально (см. ниже)
                 openModal(index, slider, images);
             });
         });
-
-        // Добавляем публичный метод для синхронизации с модалкой
+        
         slider.syncUpdate = function(newIndex) {
             currentIndex = newIndex;
             updateSlider();
         };
-
-        // Инициализация слайдера
+        
         createPagination();
         updateSlider();
     }
-
-    // Инициализируем каждый слайдер на странице
+    
     sliders.forEach(slider => initSlider(slider));
 });
 
@@ -131,14 +129,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeModal = document.querySelector('.modal .close');
     const prevButton = document.querySelector('.modal .prev');
     const nextButton = document.querySelector('.modal .next');
-
-    // Глобальные переменные для синхронизации
-    let activeSlider = null;  // Ссылка на слайдер, из которого открыли модалку
-    let modalImages = null;   // Массив изображений этого слайдера
-    let currentIndex = 0;     // Индекс текущего изображения в модалке
-
-    // Функция открытия модального окна
-    // Принимает индекс, ссылку на слайдер и массив изображений этого слайдера
+    
+    let activeSlider = null; 
+    let modalImages = null;   
+    let currentIndex = 0;    
+    
     window.openModal = function (index, slider, imagesArray) {
         currentIndex = index;
         activeSlider = slider;
@@ -146,55 +141,35 @@ document.addEventListener('DOMContentLoaded', function () {
         modalImage.src = modalImages[currentIndex].src;
         modal.style.display = 'block';
     };
-
-    // Закрытие модального окна
+    
     closeModal.addEventListener('click', () => {
         modal.style.display = 'none';
     });
-
-    // Обработчик для перехода к предыдущему изображению
+    
     prevButton.addEventListener('click', () => {
         if (!modalImages) return;
         currentIndex = (currentIndex === 0) ? modalImages.length - 1 : currentIndex - 1;
         modalImage.src = modalImages[currentIndex].src;
-        // Синхронизируем слайдер, если он открыт
         if (activeSlider && typeof activeSlider.syncUpdate === 'function') {
             activeSlider.syncUpdate(currentIndex);
         }
     });
-
-    // Обработчик для перехода к следующему изображению
+    
     nextButton.addEventListener('click', () => {
         if (!modalImages) return;
         currentIndex = (currentIndex === modalImages.length - 1) ? 0 : currentIndex + 1;
         modalImage.src = modalImages[currentIndex].src;
-        // Синхронизируем слайдер
         if (activeSlider && typeof activeSlider.syncUpdate === 'function') {
             activeSlider.syncUpdate(currentIndex);
         }
     });
 
-    // Также можно закрывать модалку при клике вне изображения
     window.addEventListener('click', (event) => {
         if (event.target === modal) {
             modal.style.display = 'none';
         }
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -449,4 +424,41 @@ document.addEventListener('DOMContentLoaded', function () {
             modal.style.display = 'none';
         }
     });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const mobileNav = document.querySelector('.mobile-nav');
+const hamburgerClose = document.querySelector('.hamburger-close');
+
+hamburgerClose.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+})
+hamburgerMenu.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
 });
