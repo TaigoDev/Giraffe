@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Puff-Print";
 }
-<header class="header-section-puff">
+<header id="pc" class="header-section-puff ">
     <div class="container-fluid container">
         <div class="d-flex justify-content-between align-items-center pt-5">
             <div class="header-left">
@@ -17,7 +17,7 @@
                     <a class="nav-link text-white" href="/about">О нас</a>
                     <div class="dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                           data-bs-toggle="dropdown" aria-expanded="false">
                             Услуги
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -30,12 +30,50 @@
                     </div>
                     <a class="nav-link text-white" href="/Contacts">Контакты</a>
                 </nav>
-                <a class="text-white ContactUs" href="/Index#form">Связаться с нами</a>
+                <a class="text-white ContactUs" href="#form">Связаться с нами</a>
             </div>
         </div>
     </div>
     <div class="text-center">
-        <h1 class="text-center heading">Puff-Print</h1>
+        <h1 class="text-center heading">Puff - Print</h1>
+    </div>
+</header>
+<header id="mobile" class="header-section-puff">
+    <div class="container-fluid container">
+        <div class="d-flex justify-content-between align-items-center pt-5">
+            <a class="navbar-brand" href="/Index">
+                <img src="/img/logo.png" alt="Giraffe" width="150">
+            </a>
+            <button class="hamburger-menu" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="nav mobile-nav">
+            <a class="navbar-brand" href="/Index">
+                <img src="/img/logo.png" alt="Giraffe" width="150">
+            </a>
+            <a class="nav-link text-white" href="/Index">Главная</a>
+            <a class="nav-link text-white" href="/about">О нас</a>
+            <div class="dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button">
+                    Услуги
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/SilkscreenPrinting">Шелкография</a></li>
+                    <li><a class="dropdown-item" href="/dtf">ДТФ</a></li>
+                    <li><a class="dropdown-item" href="/PlotterCutting">Плоттерная резка</a></li>
+                    <li><a class="dropdown-item" href="/Puff-Print">Puff-Print</a></li>
+                    <li><a class="dropdown-item" href="/Embroidery">Вышивка</a></li>
+                </ul>
+
+            </div>
+            <a class="nav-link text-white" href="/Contacts">Контакты</a>
+        </nav>
+    </div>
+    <div class="text-center">
+        <h1 class="text-center heading">Puff - Print</h1>
     </div>
 </header>
 <main>
@@ -158,7 +196,7 @@
                 <h3>Хотите заказать у нас услугу?</h3>
                 <div class="bidText">
                     <p>Заполните форму и мы с Вами свяжемся!</p>
-                    <a class="yellowButton" href="/Index#form">Связаться с нами</a>
+                    <a class="yellowButtonLong" href="/Index#form">Связаться с нами</a>
                 </div>
             </div>
         </div>

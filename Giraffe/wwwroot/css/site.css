@@ -88,11 +88,18 @@ body {
     background-size: cover;
 }
 
+#pc {
+    display: block;
+}
+
+#mobile {
+    display: none;
+}
+
 .nav-link {
     font-size: 1rem;
     margin-right: 20px;
 }
-
 
 .hamburger-menu {
     display: none;
@@ -102,7 +109,11 @@ body {
     height: 30px;
     background: none;
     border: none;
+    position: absolute;
+    top: 48px;
+    right: 23px;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .hamburger-menu span {
@@ -110,50 +121,85 @@ body {
     height: 3px;
     background: white;
     border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 .mobile-nav {
     display: none;
     flex-direction: column;
-    background-color: black;
-    padding: 10px;
+    background: #111111;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    overflow-y: auto;
 }
 
 .mobile-nav.active {
     display: flex;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
     justify-content: flex-start;
-    padding-top: 40px;
-}
-
-.navbar-brand {
-    margin-bottom: 40px;
-}
-
-.nav-link {
-    margin-bottom: 10px;
-    font-weight: bold;
-    margin-right: 0;
-    font-size: 16px;
+    align-items: center;
 }
 
 .dropdown-menu {
-    background-color: #343a40;
+    display: none;
+    flex-direction: column;
+    background: #111111;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.dropdown-menu.active {
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    background: #111111;
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
     border: none;
 }
 
-.dropdown-menu .dropdown-item {
-    color: white;
+.dropdown-menu li {
+    margin-top: 12px;
 }
 
-.dropdown-menu .dropdown-item:hover {
-    background-color: #495057;
+.dropdown-menu.active {
+    display: flex;
 }
+
+.dropdown-item {
+    color: #969696;
+}
+
+.dropdown-item:hover {
+    color: #fff;
+    background: none;
+    border: none;
+}
+
 
 .btn-outline-light {
     font-size: 0.9rem;
@@ -193,11 +239,6 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     height: 100%;
-}
-
-.footer-text a {
-    font-weight: 600;
-    font-size: 17px;
 }
 
 .socialMedia img {
@@ -250,6 +291,7 @@ h2 {
     text-decoration: none;
     color: #000;
     padding: 10px;
+    margin-top: 70px;
 }
 
 .yellowButton:hover {
@@ -1180,6 +1222,26 @@ h2 {
     stroke: #B4F115; 
 }
 
+.uslugi {
+    margin-bottom: 90px;
+}
+
+.yellowButtonLong {
+    width: 208px;
+    height: 31px;
+    border-radius: 999px;
+    background: #b4f115;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    display: inline;
+    outline: none;
+    border: 0;
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+}
+
 @keyframes exit {
     0% {
         opacity: 1;
@@ -1201,6 +1263,11 @@ h2 {
 }
 
 @media (max-width: 992px) {
+
+    .slder-cad-small {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
     
     .header-left {
         width: 20%;
@@ -1213,6 +1280,81 @@ h2 {
     .hamburger-menu {
         display: flex;
     }
+    
+    .navbar-brand {
+        margin-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .yellowButton {
+        width: 121px;
+        height: 31px;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13.41px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .header-section-main,
+    .header-section-about,
+    .header-section-silk,
+    .header-section-dtf,
+    .header-section-plotterCutting,
+    .header-section-puff,
+    .header-section-contact,
+    .header-section-embroidery {
+        margin-bottom: 40px;
+    }
+
+    .header-section-main {
+        background-image: url(/img/backgroundMainMobile.png);
+        background-size: cover;
+    }
+
+    .header-section-about {
+        background-image: url(/img/backgroundAboutMobile.png);
+        background-size: cover;
+    }
+
+    .header-section-silk {
+        background-image: url(/img/backgroundSilkMobile.png);
+        background-size: cover;
+    }
+
+    .header-section-dtf {
+        background-image: url(/img/backgroundDtfMobile.png);
+        background-size: cover;
+    }
+
+    .header-section-plotterCutting {
+        background-image: url(/img/backgroundPlotterMobile.png);
+        background-size: cover;
+    }
+
+    .header-section-puff {
+        background-image: url(/img/backgroundPuffMobile.png);
+        background-size: cover;
+    }
+
+    .header-section-embroidery {
+        background-image: url(/img/backgroundEmbroideryMobile.png);
+        background-size: cover;
+    }
+
+    .header-section-contact {
+        background-image: url(/img/backgroundContactMobile.png);
+        background-size: cover;
+    }
+
+    #pc {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
 
     .nav {
         display: none;
@@ -1223,6 +1365,39 @@ h2 {
         flex-direction: column;
     }
 
+    .nav-link {
+        margin-bottom: 10px;
+        font-weight: bold;
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    .dropdown-toggle {
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .dropdown-item {
+        color: #969696;
+        font-size: 12px;
+        font-weight: 500;
+        background: none;
+        border: none;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        width: auto;
+        box-shadow: none;
+    }
+
     .ContactUs {
         width: 130px;
         font-size: 10px;
@@ -1230,7 +1405,10 @@ h2 {
     }
 
     .heading {
-        font-size: 25px;
+        font-weight: 700;
+        font-size: 33px;
+        text-align: center;
+        margin-top: 110px;
     }
 
     .separation {
@@ -1240,7 +1418,7 @@ h2 {
 
     h2 {
         font-size: 18px;
-        
+        width: 200px;
     }
 
     .photos h2 {
@@ -1253,7 +1431,11 @@ h2 {
     }
 
     .greetings h2 {
-        width: 100%;
+        width: 60%;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+
     }
 
     .greetings p,
@@ -1263,23 +1445,39 @@ h2 {
         font-size: 17px;
     }
 
+    .trust1,
+    .trust2,
+    .trust3,
+    .trust4 {
+        font-size: 22px;
+        padding-top: 30px;
+    }
+
     .trust1 h3,
     .trust2 h3,
     .trust3 h3,
     .trust4 h3 {
         font-size: 22px;
+        margin-bottom: 0;
     }
 
     .trust1 p,
     .trust2 p,
     .trust3 p,
     .trust4 p {
-        font-size: 15px;
+        font-size: 13px;
         width: 277px;
+        margin-top: 30px;
+        margin-bottom: 0;
     }
 
     .trustNumbers {
         margin-bottom: 40px;
+        height: 650px;
+    }
+    
+    .uslugi {
+        margin-bottom: 37px;
     }
 
     .services {
@@ -1303,7 +1501,7 @@ h2 {
     }
 
     .servicesСard5 {
-        margin-bottom: 45px;
+        margin-bottom: 40px;
     }
 
     .overlay {
@@ -1392,18 +1590,58 @@ h2 {
     }
 
     .bid {
-        background-size: 380px;
+        background-size: 530px;
         margin-bottom: 100px;
         background-position: 30% 22%;
     }
+    
+    .bid h2 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24.38px;
+        text-align: center;
+    }
 
     .bid p {
-        margin-bottom: 50px;
+        color: #8E8E8E;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15.85px;
+        text-align: center;
+        width: 253px;
+        margin-bottom: 30px;
+        margin-top: 3px;
     }
 
     .footer-text {
         display: flex;
         flex-direction: column;
+        justify-content: flex-end;
+        height: 80%;
+    }
+
+    .footer-navigation {
+        display: flex;
+    }
+
+    .foot-brand {
+        padding-bottom: 30px;
+    }
+
+    .foot-brand img {
+        width: 219px;
+        height: 46px;
+    }
+
+    .footer-navigation a {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .socialMedia img {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin: 0px;
     }
 
     .comand {
@@ -1418,6 +1656,7 @@ h2 {
         width: 313px;
         height: 131px;
         border-radius: 12px;
+        margin-bottom: 6px;
     }
 
     .profile-card-big img.background {
@@ -1437,6 +1676,11 @@ h2 {
         justify-content: flex-start;
         bottom: -20px;
         left: 0;
+    }
+
+    .stages h2 {
+        margin-top: 45px;
+        margin-bottom: 32px;
     }
 
     .info p {
@@ -1510,7 +1754,7 @@ h2 {
         height: 206px;
         padding-top: 33px;
         padding-left: 28px;
-        margin-bottom: 20px;
+        margin-bottom: 9px;
         padding-bottom: 0px;
         padding-right: 0px;
     }
@@ -1552,7 +1796,7 @@ h2 {
     }
 
     .acc-btn {
-        margin-bottom: 20px;
+        margin-bottom: 9px;
         font-size: 12px;
         height: 73px;
         border-radius: 13px;
@@ -1581,10 +1825,10 @@ h2 {
     .bidForm-puff,
     .bidForm-dtf {
         background-repeat: no-repeat;
-        width: 98%;
+        width: 314px;
         border-radius: 31px;
         height: 326px;
-        padding: 50px 20px 70px 40px;
+        padding: 46px 0px 46px 43px;
         margin-top: 30px;
         margin-bottom: 100px;
         box-sizing: border-box;
@@ -1596,9 +1840,9 @@ h2 {
     .bidForm-puff h3,
     .bidForm-dtf h3 {
         font-weight: 600;
-        font-size: 25px;
+        font-size: 22px;
         color: #fff;
-        width: 90%;
+        width: 70%;
     }
 
     .bidForm p,
@@ -1606,16 +1850,20 @@ h2 {
     .bidForm-plotter p,
     .bidForm-puff p,
     .bidForm-dtf p {
-        font-weight: 400;
-        font-size: 15px;
-        color: #a6a6a6;
+        font-weight: 600;
+        font-size: 13px;
+        color: #D1D1D1;
         width: 250px;
+        
     }
 
     .bidText {
-        margin-top: 45px;
+        margin-top: 15px;
         display: flex;
         flex-direction: column;
+        height: 70%;
+        width: 90%;
+        align-items: center;
     }
 
     .contact-info {
@@ -1630,7 +1878,7 @@ h2 {
     
 
     .adress-info p {
-        width: 183px;
+        width: 295px;
         font-size: 11px;
         padding-left: 87px;
         margin-top: 38px;
@@ -1639,6 +1887,11 @@ h2 {
     .slider-row {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .slider-container {
+        margin-bottom: 37px;
     }
 
     .slider-large,
@@ -1655,11 +1908,6 @@ h2 {
     .slider-button {
         width: 30px;
         height: 30px;
-    }
-
-    .footer-text .nav-link {
-        margin: 0;
-        padding: 0;
     }
 
     .footer-text .navbar-brand {
@@ -1692,6 +1940,14 @@ h2 {
         padding-top: 34px;
         padding-bottom: 0px;
         padding-left: 45px;
+    }
+
+    .bidForm, 
+    .bidForm-silk, 
+    .bidForm-plotter, 
+    .bidForm-puff, 
+    .bidForm-dtf {
+        background-position: 80%;
     }
 }
 

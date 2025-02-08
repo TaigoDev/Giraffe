@@ -4,26 +4,60 @@
 @{
     ViewData["Title"] = "Главная";
 }
-<header class="header-section-main">
+<header id="pc" class="header-section-main ">
     <div class="container-fluid container">
-        <div class="d-flex justify-content-between align-items-center pt-2">
-            <a class="navbar-brand" href="/Index">
-                <img src="/img/logo.png" alt="Giraffe" width="150">
-            </a>
-            <button class="hamburger-menu" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <button class="hamburger-close" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-            </button>
+        <div class="d-flex justify-content-between align-items-center pt-5">
+            <div class="header-left">
+                <a class="navbar-brand" href="/Index">
+                    <img src="/img/logo.png" alt="Giraffe" width="150">
+                </a>
+            </div>
+            <div class="header-right d-flex align-items-center">
+                <nav class="nav">
+                    <a class="nav-link text-white" href="/Index">Главная</a>
+                    <a class="nav-link text-white" href="/about">О нас</a>
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Услуги
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/SilkscreenPrinting">Шелкография</a></li>
+                            <li><a class="dropdown-item" href="/dtf">ДТФ</a></li>
+                            <li><a class="dropdown-item" href="/PlotterCutting">Плоттерная резка</a></li>
+                            <li><a class="dropdown-item" href="/Puff-Print">Puff-Print</a></li>
+                            <li><a class="dropdown-item" href="/Embroidery">Вышивка</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-link text-white" href="/Contacts">Контакты</a>
+                </nav>
+                <a class="text-white ContactUs" href="#form">Связаться с нами</a>
+            </div>
         </div>
-        <nav class="nav mobile-nav">
+    </div>
+    <div class="text-center">
+        <h1 class="text-center heading">Студия шелкографии</h1>
+    </div>
+</header>
+<header id="mobile" class="header-section-main">
+    <div class="container-fluid container">
+        <div class="d-flex justify-content-center align-items-center pt-5">
             <a class="navbar-brand" href="/Index">
                 <img src="/img/logo.png" alt="Giraffe" width="150">
             </a>
+            
+        </div>
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav mobile-nav">
+            <div class="d-flex justify-content-between align-items-center pt-5">
+                <a class="navbar-brand" href="/Index">
+                    <img src="/img/logo.png" alt="Giraffe" width="150">
+                </a>
+            </div>
             <a class="nav-link text-white" href="/Index">Главная</a>
             <a class="nav-link text-white" href="/about">О нас</a>
             <div class="dropdown">
@@ -41,6 +75,9 @@
             </div>
             <a class="nav-link text-white" href="/Contacts">Контакты</a>
         </nav>
+    </div>
+    <div class="text-center">
+        <h1 class="text-center heading">Студия <br> шелкографии</h1>
     </div>
 </header>
 <main>
@@ -99,7 +136,7 @@
             <p>GIRAFFE</p>
         </div>
         <div class="services">
-            <h2 style="margin-bottom: 90px;">Наши услуги</h2>
+            <h2 class="uslugi">Наши услуги</h2>
             <div class="cards" id="uslugi">
                 <div class="servicesСard1">
                     <div class="overlay">

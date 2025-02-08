@@ -8,14 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc0082e0-1f96-499b-b37c-0abea6e3cd4c" name="Changes" comment="">
+    <list default="true" id="dc0082e0-1f96-499b-b37c-0abea6e3cd4c" name="Changes" comment="fixes sliders">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Contacts.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Contacts.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Embroidery.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Embroidery.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/PlotterCutting.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/PlotterCutting.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Puff-Print.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Puff-Print.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/dtf.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/dtf.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/wwwroot/css/site.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/wwwroot/js/site.js" afterDir="false" />
     </list>
@@ -25,7 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DpaMonitoringSettings">
-    <option name="firstShow" value="false" />
+    <option name="autoShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,7 +39,6 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Giraffe/Pages/Embroidery.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/burikin.na/RiderProjects/Giraffe/Giraffe/Pages/about.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -115,9 +109,7 @@
       <workItem from="1738666471387" duration="28000" />
       <workItem from="1738666677882" duration="823000" />
       <workItem from="1738667548744" duration="2994000" />
-      <workItem from="1738726765147" duration="36197000" />
-      <workItem from="1738898712063" duration="458000" />
-      <workItem from="1738899276318" duration="13557000" />
+      <workItem from="1738726765147" duration="35065000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <option name="closed" value="true" />
@@ -135,15 +127,7 @@
       <option name="project" value="LOCAL" />
       <updated>1738757950689</updated>
     </task>
-    <task id="LOCAL-00003" summary="redy sliders">
-      <option name="closed" value="true" />
-      <created>1738842613064</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1738842613064</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,8 +139,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="fix" />
     <MESSAGE value="fixes sliders" />
-    <MESSAGE value="redy sliders" />
-    <option name="LAST_COMMIT_MESSAGE" value="redy sliders" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes sliders" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

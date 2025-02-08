@@ -452,13 +452,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const mobileNav = document.querySelector('.mobile-nav');
-const hamburgerClose = document.querySelector('.hamburger-close');
 
-hamburgerClose.addEventListener('click', () => {
-    mobileNav.classList.toggle('active');
-})
-hamburgerMenu.addEventListener('click', () => {
-    mobileNav.classList.toggle('active');
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Гамбургер-меню
+    const hamburgerMenu = document.querySelector("#mobile .hamburger-menu");
+    const mobileNav = document.querySelector("#mobile .mobile-nav");
+
+    if (hamburgerMenu) {
+        hamburgerMenu.addEventListener("click", () => {
+            mobileNav.classList.toggle("active");
+            hamburgerMenu.classList.toggle("active");
+        });
+    }
+
+    // Выпадающее меню (работает в обоих `header`)
+    document.querySelectorAll(".dropdown-toggle").forEach((toggle) => {
+        toggle.addEventListener("click", (e) => {
+            e.preventDefault();
+            const dropdownMenu = toggle.nextElementSibling;
+            dropdownMenu.classList.toggle("active");
+        });
+    });
 });
