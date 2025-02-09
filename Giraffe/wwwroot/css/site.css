@@ -1669,6 +1669,7 @@ h2 {
     .info {
         justify-content: flex-start;
         bottom: 40px;
+        padding: 0px;
     }
 
     .info-small {
@@ -1697,11 +1698,13 @@ h2 {
     .info h2 {
         font-size: 20px;
         margin-bottom: 0;
+        margin-top: 15px;
     }
 
     .info-small h2 {
         font-size: 13px;
         margin-bottom: 5px;
+        margin-top: 0px;
     }
 
     .profile-card {
