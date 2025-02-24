@@ -1298,7 +1298,7 @@ h2 {
         font-size: 11px;
         line-height: 13.41px;
         text-align: center;
-        margin-top: 30px;
+        margin-top: 47px;
     }
 
     .header-section-main,
@@ -1437,24 +1437,32 @@ h2 {
     }
 
     .greetings h2 {
-        width: 60%;
+        width: 70%;
         font-weight: 600;
         font-size: 18px;
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 48px;
+        margin-top: 48px;
     }
 
     .greetings,
-    .mission,
     .infoProduct {
         margin-top: 0;
-    } 
+    }
+
+    .mission {
+        margin-top: 47px;
+    }
 
     .greetings p,
     .mission p,
     .infoProduct p {
         margin: 0px;
         font-size: 17px;
+    }
+
+    .trustUs h2 {
+        margin: 47px 0px;
     }
 
     .trust1,
@@ -1469,7 +1477,7 @@ h2 {
     .trust2 h3,
     .trust3 h3,
     .trust4 h3 {
-        font-size: 22px;
+        font-size: 15px;
         margin-bottom: 0;
     }
 
@@ -1489,7 +1497,7 @@ h2 {
     }
     
     .uslugi {
-        margin-bottom: 40px;
+        margin: 47px 0px;
     }
 
     .services {
@@ -1583,22 +1591,25 @@ h2 {
         display: flex;
         flex-direction: column;
         width: 100%;
+        align-items: center;
     }
 
     .input-container {
         margin-bottom: 5px;
-        width: 100%;
+        width: 314px;
+        height: 47px;
     }
 
     .custom-input {
-        width: 100%;
+        width: 314px;
+        height: 47px;
     }
 
     .bid {
-        background-size: 530px;
-        margin-bottom: 100px;
+        background-size: 470px;
         background-position: 35% 0%;
         padding-top: 44px;
+        margin-bottom: 45px;
     }
     
     .bid h2 {
@@ -1761,7 +1772,7 @@ h2 {
         position: relative;
         background-color: #1c1c1c;
         border-radius: 16px;
-        width: 100%;
+        width: 314px;
         height: 206px;
         padding-top: 33px;
         padding-left: 28px;
@@ -1773,7 +1784,7 @@ h2 {
     .faqLabel {
         position: absolute;
         top: -15px;
-        left: 197px;
+        left: 167px;
         font-weight: 700;
         font-size: 65px;
         color: #2a2a2a;
@@ -1799,7 +1810,7 @@ h2 {
     }
 
     .acc-container {
-        width: 100%;
+        width: 314px;
     }
     
     .acc-content p {
@@ -1841,8 +1852,8 @@ h2 {
         background-size: cover;
         height: 349px;
         padding: 46px 0px 46px 43px;
-        margin-top: 30px;
-        margin-bottom: 100px;
+        margin-top: 36px;
+        margin-bottom: 85px;
         box-sizing: border-box;
     }
 
