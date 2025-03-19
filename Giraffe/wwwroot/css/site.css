@@ -277,7 +277,7 @@ h2 {
     margin-bottom: 75px;
 }
 
-.yellowButton {
+.yellowButton, .yellowButtonForm {
     border-radius: 55px;
     width: 183px;
     height: 44px;
@@ -294,7 +294,7 @@ h2 {
     margin-top: 70px;
 }
 
-.yellowButton:hover {
+.yellowButton:hover, .yellowButtonForm:hover {
     color: #000;
 }
 
@@ -306,6 +306,10 @@ h2 {
     text-align: center;
     color: #565656;
     margin: 70px;
+}
+
+.bigSep {
+    height: auto;
 }
 
 .trustNumbers {
@@ -395,7 +399,7 @@ h2 {
     display: flex;
 }
 
-.text-container h2 {
+.number, .nameNumber {
     font-weight: 500;
     font-size: 34px;
     color: #fff;
@@ -438,7 +442,6 @@ h2 {
 
 .slder-cad-small {
     width: 100%;
-    border-radius: 15px;
     position: relative;
     margin-top: 120px;
     margin-bottom: 120px;
@@ -1301,6 +1304,17 @@ h2 {
         margin-top: 47px;
     }
 
+    .yellowButtonForm {
+        width: 121px;
+        height: 31px;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13.41px;
+        text-align: center;
+        margin-top: 32px;
+    }
+
     .header-section-main,
     .header-section-about,
     .header-section-silk,
@@ -1410,7 +1424,7 @@ h2 {
     }
 
     .heading {
-        font-weight: 700;
+        font-weight: bolder;
         font-size: 33px;
         text-align: center;
         margin-top: 110px;
@@ -1418,13 +1432,14 @@ h2 {
 
     .separation {
         width: 98%;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     h2 {
         font-size: 18px;
         margin-bottom: 40px;
         margin-top: 40px;
+        width: 200px;
     }
 
     .photos h2 {
@@ -1448,19 +1463,39 @@ h2 {
     .greetings,
     .infoProduct {
         margin-top: 0;
+        margin-bottom: 31px;
     }
 
     .mission {
         margin-top: 47px;
     }
 
-    .greetings p,
-    .mission p,
-    .infoProduct p {
+    .greetings p {
         margin: 0px;
-        font-size: 17px;
+        font-size: 13px;
+        width: 304px;
     }
 
+    .infoProduct p {
+        margin-bottom: 50px;
+        width: 297px;
+        font-size: 13px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .mission p {
+        margin: 0px;
+        font-size: 13px;
+        width: 253px;
+    }
+
+    .bigSep {
+        height: 154px;
+        content: url("/img/mobileSep.png");
+    }
+    
     .trustUs h2 {
         margin: 47px 0px;
     }
@@ -1493,7 +1528,8 @@ h2 {
 
     .trustNumbers {
         margin-bottom: 40px;
-        height: 650px;
+        height: 610px;
+        background-position: center;
     }
     
     .uslugi {
@@ -1511,7 +1547,7 @@ h2 {
     .servicesСard5 {
         position: relative;
         border-radius: 26px;
-        width: 97%;
+        width: 330px;
         height: 151px;
         background-size: cover;
         background-position: center;
@@ -1530,19 +1566,41 @@ h2 {
     .text-container {
         max-width: 80%;
     }
-
-    .text-container h2 {
+    
+    .number {
+        font-size: 16px;
+        margin-bottom: 0px;
+        margin-top: 0px;
         margin-right: 20px;
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        margin-top: 0;
+        line-height: 27px;
+    }
+    
+    .nameNumber {
+        font-size: 22px;
+        margin-bottom: 13px;
+        margin-top: 0px;
+        margin-right: 0px;
+        font-weight: 700;
     }
 
     .text-container p {
         font-size: 8px;
         width: 211px;
         height: 60px;
+        color: #D2D2D2;
+        font-weight: 600;
+    }
+
+    .servicesСard1 {
+        background-image: url("/img/shelkCardMobile.png");
+    }
+
+    .servicesСard2 {
+        background-image: url("/img/dtfCardMobile.png");
+    }
+
+    .servicesСard3 {
+        background-image: url("/img/plotterCardMobile.png");
     }
 
     .icon-container {
@@ -1558,6 +1616,11 @@ h2 {
     .icon-container svg {
         width: 19px;
         height: 19px;
+    }
+
+    #left, #right {
+        width: 13px;
+        height: 13px;
     }
 
     .cards {
@@ -1583,8 +1646,8 @@ h2 {
     }
 
     .slder-cad  {
-        margin-top: 30px;
         margin-bottom: 30px;
+        width: 282px;
     }
     
     .inputs {
@@ -1598,6 +1661,7 @@ h2 {
         margin-bottom: 5px;
         width: 314px;
         height: 47px;
+        margin-right: 0px;
     }
 
     .custom-input {
@@ -1607,7 +1671,7 @@ h2 {
 
     .bid {
         background-size: 470px;
-        background-position: 35% 0%;
+        background-position: 35% 5%;
         padding-top: 44px;
         margin-bottom: 45px;
     }
@@ -1678,6 +1742,7 @@ h2 {
     }
 
     .profile-card-big img.background {
+        content: url("/img/staff/kirillMobile.png");
         position: absolute;
         top: 0;
         left: 0;
@@ -1740,7 +1805,7 @@ h2 {
         align-items: center;
         width: 98%;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 49px;
         flex-direction: column;
     }
 
@@ -1756,6 +1821,7 @@ h2 {
         font-weight: 400;
         font-size: 12px;
         color: #565656;
+        margin-bottom: 0px;
     }
 
     .faq {
@@ -1822,6 +1888,7 @@ h2 {
         font-size: 12px;
         height: 73px;
         border-radius: 13px;
+        padding: 22px 11px 22px 28px;
     }
 
     .acc-btn:after {
@@ -1833,7 +1900,7 @@ h2 {
     }
     
     .pagination {
-        margin-top: 13px;
+        margin-top: 5px;
     }
 
     .pagination .dot {
@@ -1958,6 +2025,7 @@ h2 {
         border-radius: 31px;
         width: 314px;
         height: 235px;
+        margin-top: 30px;
     }
 
     .adress {
@@ -1986,6 +2054,15 @@ h2 {
     .bidForm-puff, 
     .bidForm-dtf {
         background-position: 80%;
+    }
+
+    .slider-small img {
+        border-radius: 18px;
+    }
+
+    .yellowButtonLong {
+        font-size: 11px;
+        padding: 7px;
     }
 }
 
