@@ -8,17 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc0082e0-1f96-499b-b37c-0abea6e3cd4c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Components/ContactForm.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Components/ContactForm.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/SilkscreenPrinting.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/SilkscreenPrinting.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/about.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/about.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/wwwroot/css/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/wwwroot/img/backgroundAdressSmall.png" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/wwwroot/img/backgroundAdressSmall.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/wwwroot/img/contactCardSmall.png" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/wwwroot/img/contactCardSmall.png" afterDir="false" />
-    </list>
+    <list default="true" id="dc0082e0-1f96-499b-b37c-0abea6e3cd4c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,8 +112,17 @@
       <workItem from="1725080360399" duration="5870000" />
       <workItem from="1741858777594" duration="5115000" />
       <workItem from="1742181815641" duration="2482000" />
-      <workItem from="1742185176696" duration="36094000" />
+      <workItem from="1742185176696" duration="41758000" />
     </task>
+    <task id="LOCAL-00001" summary="fixes mobile">
+      <option name="closed" value="true" />
+      <created>1742386712587</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1742386712587</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +146,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="last fix" />
     <MESSAGE value="fix plotter" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix plotter" />
+    <MESSAGE value="fixes mobile" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes mobile" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -104,9 +104,9 @@ body {
 .hamburger-menu {
     display: none;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 30px;
-    height: 30px;
+    height: 24px;
     background: none;
     border: none;
     position: absolute;
@@ -118,9 +118,9 @@ body {
 
 .hamburger-menu span {
     width: 100%;
-    height: 3px;
+    height: 2px;
     background: white;
-    border-radius: 3px;
+    border-radius: 2px;
     transition: all 0.3s;
 }
 
@@ -627,6 +627,10 @@ h2 {
 .cooperation {
     margin-bottom: 150px;
     margin-top: 120px;
+}
+
+.cooperation h2 {
+    width: 340px;
 }
 
 .custom-input {
@@ -1271,6 +1275,16 @@ h2 {
         margin: 0px;
     }
 
+    .trustUs h2 {
+        width: 340px;
+    }
+    
+    .photos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .slder-cad-small {
         margin-top: 40px;
         margin-bottom: 40px;
@@ -1444,6 +1458,7 @@ h2 {
 
     .photos h2 {
         margin-top: 40px;
+        margin-bottom: 0px;
     }
 
     .comand h2 {
@@ -1628,8 +1643,8 @@ h2 {
     }
 
     .cooperation {
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 0px;
+        margin-bottom: 30px;
     }
 
     .cad-img-small img {
@@ -1682,6 +1697,7 @@ h2 {
         line-height: 24.38px;
         text-align: center;
         margin-bottom: 0;
+        width: 340px;
     }
 
     .bid p {
@@ -1783,12 +1799,14 @@ h2 {
         font-size: 20px;
         margin-bottom: 0;
         margin-top: 15px;
+        width: 30px;
     }
 
     .info-small h2 {
         font-size: 13px;
         margin-bottom: 5px;
         margin-top: 0px;
+        width: 20px;
     }
 
     .profile-card {
