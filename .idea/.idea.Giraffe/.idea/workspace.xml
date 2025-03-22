@@ -8,16 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc0082e0-1f96-499b-b37c-0abea6e3cd4c" name="Changes" comment="index">
+    <list default="true" id="dc0082e0-1f96-499b-b37c-0abea6e3cd4c" name="Changes" comment="fiz text in card">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Contacts.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Contacts.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Embroidery.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Embroidery.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe/Pages/PlotterCutting.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/PlotterCutting.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/Puff-Print.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/Puff-Print.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/SilkscreenPrinting.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/SilkscreenPrinting.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/about.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/about.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/dtf.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/dtf.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Giraffe/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,26 +52,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Giraffe: IIS Express.executor&quot;: &quot;Run&quot;,
-    &quot;.NET Launch Settings Profile.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Giraffe: IIS Express.executor": "Run",
+    ".NET Launch Settings Profile.Unnamed.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.language",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;Blazor&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Blazor"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Unnamed" type="LaunchSettings" factoryName=".NET Launch Settings Profile" nameIsGenerated="true">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Giraffe/Giraffe.csproj" />
@@ -183,7 +176,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742641404970</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="all fix">
+      <option name="closed" value="true" />
+      <created>1742643267161</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742643267161</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fiz text in card">
+      <option name="closed" value="true" />
+      <created>1742644342357</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742644342357</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +222,9 @@
     <MESSAGE value="fix background color" />
     <MESSAGE value="fix" />
     <MESSAGE value="index" />
-    <option name="LAST_COMMIT_MESSAGE" value="index" />
+    <MESSAGE value="all fix" />
+    <MESSAGE value="fiz text in card" />
+    <option name="LAST_COMMIT_MESSAGE" value="fiz text in card" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
