@@ -110,7 +110,8 @@ body {
     display: none;
     flex-direction: column;
     justify-content: space-evenly;
-    min-width: 30px;
+    max-width: 30px;
+    width: 100%;
     height: 24px;
     background: none;
     border: none;
@@ -1317,11 +1318,12 @@ h2 {
     }
 
     .yellowButton {
-        width: 121px;
+        max-width: 121px;
+        width: 100%;
         height: 31px;
         border-radius: 999px;
         font-weight: 700;
-        font-size: 11px;
+        font-size: 10px;
         line-height: 11px;
         text-align: center;
         margin-top: 47px;
