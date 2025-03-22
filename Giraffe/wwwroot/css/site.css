@@ -122,8 +122,16 @@ body {
     z-index: 1000;
 }
 
-.hamburger-menu span {
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 100%;
+    height: 100%;
+}
+
+.menu-icon span {
+    width: 18px;
     height: 2px;
     background: white;
     border-radius: 2px;
