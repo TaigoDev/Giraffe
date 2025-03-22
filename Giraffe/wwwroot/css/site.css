@@ -1731,6 +1731,21 @@ h2 {
         margin-top: 3px;
     }
 
+    .message {
+        justify-content: center;
+    }
+    
+    .message p {
+        color: #8E8E8E;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15.85px;
+        text-align: center;
+        width: 253px;
+        margin-bottom: 0px;
+        margin-top: 3px;
+    } 
+
     .footer-text {
         display: flex;
         flex-direction: column;
