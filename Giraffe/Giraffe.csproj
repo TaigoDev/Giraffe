@@ -21,8 +21,8 @@
     <PackageReference Include="YamlDotNet" Version="16.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="TAIGO.ID.Environment-8.0.6.0">
-      <HintPath>TAIGO.ID.Environment-8.0.6.0.dll</HintPath>
+    <Reference Include="TAIGO.ID.Environment-8.0.8.0">
+      <HintPath>TAIGO.ID.Environment-8.0.8.0.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -8,7 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc0082e0-1f96-499b-b37c-0abea6e3cd4c" name="Changes" comment="" />
+    <list default="true" id="dc0082e0-1f96-499b-b37c-0abea6e3cd4c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Giraffe/Giraffe.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Giraffe.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Giraffe/TAIGO.ID.Environment-8.0.6.0.dll" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,9 +34,12 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/TaigoDev/Giraffe.git&quot;,
-    &quot;accountId&quot;: &quot;1c2cdf54-502a-4151-931f-d050d383660e&quot;
+    &quot;accountId&quot;: &quot;3d40c0e5-aec1-4f70-929c-923b882b0e59&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Giraffe/Pages/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -53,6 +61,7 @@
     &quot;.NET Launch Settings Profile.Giraffe: IIS Express.executor&quot;: &quot;Run&quot;,
     &quot;.NET Launch Settings Profile.Unnamed.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -114,7 +123,7 @@
       <workItem from="1742181815641" duration="2482000" />
       <workItem from="1742185176696" duration="41758000" />
       <workItem from="1742444475752" duration="9246000" />
-      <workItem from="1742495667460" duration="280000" />
+      <workItem from="1742618883520" duration="65000" />
     </task>
     <task id="LOCAL-00001" summary="fixes mobile">
       <option name="closed" value="true" />
@@ -140,15 +149,7 @@
       <option name="project" value="LOCAL" />
       <updated>1742469286161</updated>
     </task>
-    <task id="LOCAL-00004" summary="fix background color">
-      <option name="closed" value="true" />
-      <created>1742495866906</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1742495866906</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,8 +176,7 @@
     <MESSAGE value="fixes mobile" />
     <MESSAGE value="fixes" />
     <MESSAGE value="fix button" />
-    <MESSAGE value="fix background color" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix background color" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix button" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
