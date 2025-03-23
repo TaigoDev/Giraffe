@@ -17,7 +17,7 @@ public partial class ContactForm : ComponentBase
     {
         if(string.IsNullOrWhiteSpace(FirstName) || string.IsNullOrWhiteSpace(Telephone) || string.IsNullOrWhiteSpace(Email))
         {
-            Message = "Заполните все поля";
+            Message = "Р—Р°РїРѕР»РЅРёС‚Рµ РІСЃРµ РїРѕР»СЏ!";
             await OnCancel();
             return;
         }
@@ -25,15 +25,15 @@ public partial class ContactForm : ComponentBase
         new Task(async () => { 
             await MailService.NewMail(
                 $"""
-                <p> Пользователь сайта оставил новую заявку: </p>
-                <p> Имя: {FirstName} </p>
-                <p> Телефон: {Telephone} </p>
-                <p> Почта: {Email} </p>
+                <p> РџРѕР»СѓС‡РµРЅРѕ РЅРѕРІРѕРµ СѓРІРµРґРѕРјР»РµРЅРёРµ СЃ СЃР°Р№С‚Р°: </p>
+                <p> Р¤РРћ: {FirstName} </p>
+                <p> РўРµР»РµС„РѕРЅ: {Telephone} </p>
+                <p> РџРѕС‡С‚Р°: {Email} </p>
                 """,
-                "Новое уведомление с сайта"
+                "РќРѕРІРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ СЃ СЃР°Р№С‚Р°"
                 );
         }).Start();
-        Message = "Заявка успешно отправлена";
+        Message = "Р—Р°СЏРІРєР° СѓСЃРїРµС€РЅРѕ РѕС‚РїСЂР°РІР»РµРЅР°";
         HideForm = true;
         await OnCancel();
     }
