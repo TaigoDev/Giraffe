@@ -8,10 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc0082e0-1f96-499b-b37c-0abea6e3cd4c" name="Changes" comment="fiz text in card">
+    <list default="true" id="dc0082e0-1f96-499b-b37c-0abea6e3cd4c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Giraffe/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/Pages/PlotterCutting.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/Pages/PlotterCutting.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Giraffe/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/Giraffe/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/TaigoDev/Giraffe.git&quot;,
-    &quot;accountId&quot;: &quot;1c2cdf54-502a-4151-931f-d050d383660e&quot;
+    &quot;accountId&quot;: &quot;3d40c0e5-aec1-4f70-929c-923b882b0e59&quot;
   }
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -52,26 +51,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Giraffe: IIS Express.executor": "Run",
-    ".NET Launch Settings Profile.Unnamed.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.language",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Giraffe: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Launch Settings Profile.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Blazor"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Blazor&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Unnamed" type="LaunchSettings" factoryName=".NET Launch Settings Profile" nameIsGenerated="true">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Giraffe/Giraffe.csproj" />
@@ -119,6 +119,8 @@
       <workItem from="1742185176696" duration="41758000" />
       <workItem from="1742444475752" duration="9246000" />
       <workItem from="1742495667460" duration="280000" />
+      <workItem from="1742725185108" duration="2256000" />
+      <workItem from="1745138780845" duration="401000" />
     </task>
     <task id="LOCAL-00001" summary="fixes mobile">
       <option name="closed" value="true" />
@@ -176,23 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742641404970</updated>
     </task>
-    <task id="LOCAL-00008" summary="all fix">
+    <task id="LOCAL-00008" summary="fix bugs">
       <option name="closed" value="true" />
-      <created>1742643267161</created>
+      <created>1742725373059</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1742643267161</updated>
+      <updated>1742725373059</updated>
     </task>
-    <task id="LOCAL-00009" summary="fiz text in card">
-      <option name="closed" value="true" />
-      <created>1742644342357</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1742644342357</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,9 +216,8 @@
     <MESSAGE value="fix background color" />
     <MESSAGE value="fix" />
     <MESSAGE value="index" />
-    <MESSAGE value="all fix" />
-    <MESSAGE value="fiz text in card" />
-    <option name="LAST_COMMIT_MESSAGE" value="fiz text in card" />
+    <MESSAGE value="fix bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bugs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
